@@ -1,27 +1,45 @@
+@import './fonts.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  body{
+    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide;
+    direction: rtl;
+    font-family: estedad;
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  h1,h2,h3,h4,h5,h6 {
+    @apply font-bold
+  }
+
+  h1 {
+    @apply text-2xl md:text-4xl;
+    font-family: Estedad-semibold;
+  }
+
+  h2 {
+    @apply text-3xl sm:text-4xl
+  }
+  h3{
+    font-family: Estedad-semibold;
+  }
+
+  li{
+    @apply cursor-pointer;
+    /* font-family: Estedad-Regular; */
+  }
+
+  button {
+    @apply shadow-xl shadow-gray-400 bg-gradient-to-r from-[#5651e5] to-[#709dff]  text-white;
+    font-family: Estedad-Regular;
+    /* from-[#5651e5] to-[#709dff] from-[#50b850] to-[#9ace9a] */
+  } 
+
+  p{
+    font-family: "Estedad-regular";
+  }
 }

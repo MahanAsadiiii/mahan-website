@@ -1,0 +1,5 @@
+export * from "./Navbar"
+export * from "./Main"
+export * from "./SocialMedia"
+export * from "./AboutME"
+export * from "./Skills"
