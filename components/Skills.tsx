@@ -12,7 +12,7 @@ const Skills = () => {
                         return (
                             <div className="">
                                 <h3>{skill.name}</h3>
-                                <Image src={skill.ImageName} alt="/" width={100}/>
+                                <Image src={skill.ImageName} alt="/" width={120}/>
                             </div>
                         )
                     })}
