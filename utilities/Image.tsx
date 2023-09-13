@@ -1,15 +1,27 @@
 import whiteLogo from "../public/assets/whiteLogo.svg"
 import blackLogo from "../public/assets/blackLogo.svg"
 import heroGif from "../public/assets/gif.gif"
-import Html from "../public/skills/html.png"
+import Html from "../public/skills/HTML.png"
 import Css from "../public/skills/css.png"
 import Js from "../public/skills/Js.png"
 import React from "../public/skills/reactlogo.png"
 import Tailwind from "../public/skills/tailwind.png"
-import Wordpress from "../public/skills/wordpress-logo.png"
-import Typescript from "../public/skills/typescript.png"
+import Wordpress from "../public/skills/wordpress.png"
+import Typescript from "../public/skills/Typescript.png"
 import NextJs from "../public/skills/Nextjs-logo.svg.png"
+import Github from "../public/skills/github.png"
+import EngScl from "../public/projects/english-school.png"
+import Expenses from "../public/projects/expenses.png"
+import LandPage from "../public/projects/landing-page.png"
+import Linkedin from "../public/projects/linkedin.png"
+import Setting from "../public/projects/password.png"
+import IpDetecor from "../public/projects/user-ip-detector.png"
+import HtmlCss from "../public/projects/browser.png"
 
-export { whiteLogo, blackLogo, heroGif, 
-Html, Css, Js, React, Tailwind, Wordpress
-, Typescript,NextJs}
+export {
+    whiteLogo, blackLogo, heroGif,
+    Html, Css, Js, React, Tailwind, Wordpress
+    , Typescript, NextJs, Github,
+    IpDetecor, Setting, Linkedin, LandPage, 
+    Expenses, EngScl,HtmlCss
+}

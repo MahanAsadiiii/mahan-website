@@ -23,7 +23,7 @@ const Navbar = () => {
             <div className="flex justify-between items-center w-full md:basis-1/5 h-full ">
                 <Image src={blackLogo} alt='/' width={100} />
             </div>
-            <div className="md:basis-3/5 md:px-4">
+            <div className="md:basis-4/5 md:px-4">
                 <ul className='hidden md:flex justify-evenly'>
                     {NavbarItems.map((item, index) => {
 
