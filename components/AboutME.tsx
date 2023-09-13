@@ -25,9 +25,9 @@ const AboutME = () => {
                         <div className="bg-white rounded-lg p-5 md:p-7 md:basis-1/2 flex justify-between">
                             <h3 className='basis-3/5 md:basis-2/4 text-lg md:text-2xl flex justify-around'>ویژگی‌ها و اخلاق فردی:</h3>
                             <ul className='mt-12 basis-2/5'>
-                                {Character.map((feature) => {
+                                {Character.map((feature,index) => {
                                     return (
-                                        <li className='list-disc md:text-lg font-[estedad-regular]'>{feature.name}</li>
+                                        <li key={index} className='list-disc md:text-lg font-[estedad-regular]'>{feature.name}</li>
                                     )
                                 })}
                             </ul>
