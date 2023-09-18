@@ -4,6 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  scroll-behavior: smooth
+}
 
 @layer base {
   body{
@@ -27,6 +30,12 @@
   h3{
     font-family: Estedad-semibold;
   }
+  h4{
+    font-family: Estedad-regular;
+  }
+  h5{
+    font-family: Estedad-semibold;
+  }
 
   li{
     @apply cursor-pointer;
@@ -42,4 +51,9 @@
   p{
     font-family: "Estedad-regular";
   }
+  
+  input,textarea{
+    font-family: "Estedad-regular";
+  }
+  
 }

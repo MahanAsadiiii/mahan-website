@@ -4,7 +4,7 @@ import { Layout } from './Index'
 
 const AboutME = () => {
     return (
-        <div className='bg-[#413F42] w-full'>
+        <div id='about-me' className='bg-[#413F42] w-full'>
             <Layout>
                 <div className="flex items-center md:mx-auto flex-col ">
                     <div className="my-2">

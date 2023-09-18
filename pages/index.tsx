@@ -1,4 +1,4 @@
-import { Navbar, Main, AboutME, Skills, Projects, TimeLine} from '@/components/Index'
+import { Navbar, Main, AboutME, Skills, Projects, TimeLine, ContactMe } from '@/components/Index'
 import Head from 'next/head'
 // import { Inter } from 'next/font/google'
 
@@ -12,11 +12,11 @@ export default function Home() {
       </Head>
       <Navbar />
       <Main />
-      <AboutME/>
-      <Skills/>
-      <Projects/>
-      <TimeLine/>
-      
+      <Projects />
+      <AboutME />
+      <Skills />
+      <TimeLine />
+      <ContactMe />
     </>
   )
 }

@@ -27,7 +27,7 @@ export const ProjectDetails: projectItemsType[] = [
     },
     {
         name: 'Static Landing page',
-        skills: ["Tailwind", "NPM package"],
+        skills: ["Tailwind", "NPM package","Responsive"],
         imageName: LandPage,
         link: "https://landing-page-via-react.netlify.app",
         btnContent: "نمایش پروژه‌"
@@ -48,7 +48,7 @@ export const ProjectDetails: projectItemsType[] = [
     },
     {
         name: 'Linkedin Analysing',
-        skills: ["JSX" , "Figma"],
+        skills: ["JSX" , "Figma","Responsive"],
         imageName: Linkedin,
         link: "https://linkedin-analysing.netlify.app",
         btnContent: "نمایش پروژه‌"
@@ -62,7 +62,7 @@ export const ProjectDetails: projectItemsType[] = [
     },
     {
         name: "HTML CSS",
-        skills: ["Flex","Grid"],
+        skills: ["Flex Box","Grid"],
         imageName: HtmlCss,
         link: "portfolio-webdesign",
         btnContent: "نمایش پروژه‌ها"
@@ -71,7 +71,7 @@ export const ProjectDetails: projectItemsType[] = [
         name: "Wordpress",
         skills: ["wordpress" , "elementor" ],
         imageName: Wordpress,
-        link: "",
+            link: "",
         btnContent: "نمایش پروژه‌ها"
     }
 ]

@@ -1,2 +1,5 @@
 export * from "./NavbarItems"
 export * from "./Character"
+export * from "./ProjectDetails"
+export * from "./SkillsItems"
+export * from "./WorkExperience"
