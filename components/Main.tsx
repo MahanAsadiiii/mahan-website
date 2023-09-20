@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { Layout} from './Index'
-import { MainGif } from '@/utilities/Index'
+import { MainGif,heroPic } from '../utilities/Index'
 import Link from 'next/link'
 
 const Main = () => {
@@ -13,8 +13,9 @@ const Main = () => {
                     <p className='text-gray-600 max-w-[70%] text-center text-sm md:text-base lg:text-lg'>فارغ التحصیل کارشناسی مهندسی کامپیوتر, گرایش نرم افزار, که در حال حاضر به عنوان طراح و توسعه دهنده وب سایت, مشغول آموزش و کار هستم.</p>
                     <Link href="file/MahanAsadi-cv" className='lg:w-3/5'><button className='py-3 px-16 rounded-md mt-4 hover:scale-110 w-full ease-in-out duration-500'>دانلود رزومه</button></Link>
                 </div>
-                <div className="flex justify-center basis-1/2">
+                <div className="flex flex-col gap-3 justify-center basis-1/2">
                     <Image src={MainGif} width={650} alt='intro-pic' />
+                    <Image src={heroPic} width={650} alt='intro-pic' />
                 </div>
             </div>
         </Layout>

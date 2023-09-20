@@ -1,6 +1,7 @@
 import whiteLogo from "../public/assets/whiteLogo.svg"
 import blackLogo from "../public/assets/blackLogo.svg"
 import MainGif from "../public/assets/Intro.gif"
+import heroPic from "../public/assets/heroPic.jpg"
 import Html from "../public/skills/htmlPic.png"
 import Css from "../public/skills/css.png"
 import Js from "../public/skills/Js.png"
@@ -19,7 +20,7 @@ import IpDetecor from "../public/projects/user-ip-detector.png"
 import HtmlCss from "../public/projects/browser.png"
 
 export {
-    whiteLogo, blackLogo, MainGif,
+    whiteLogo, blackLogo, MainGif, heroPic,
     Html, Css, Js, React, Tailwind, Wordpress
     , Typescript, NextJs, Github,
     IpDetecor, Setting, Linkedin, LandPage, 
