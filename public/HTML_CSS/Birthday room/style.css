@@ -1,0 +1,868 @@
+@import url(assets/stylesheets/font.css);
+@import url(assets/stylesheets/reset.css);
+
+
+body{
+    box-sizing: border-box;
+    font-family: estedad;
+    background-color: white;
+}
+
+.container_fluid{
+    width: 100%;
+}
+
+.main-container{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* ------------------------ sec one (header) --------------------------------- */
+
+#first_section{
+    background: url(assets/images/Group\ 1st\ sec.svg) no-repeat center right #9c004eee;
+    height: 480px;
+}
+
+.image-first-section{
+    height: 480px;
+    position: absolute;
+    left: 0;
+    width: 40%;
+    background: url(assets/images/top.jpg) no-repeat top right ;
+    background-size: cover;
+    clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%)
+}
+
+#first_section .main-container{
+    position: relative;
+}
+
+.detail-first-section{
+    padding: 80px 0 80px 0;
+}
+
+.first-discription{
+    font-weight: 700;
+    font-size: 35px;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.sub-discription{
+    font-size: 17px;
+    color: white;
+}
+
+.search-bar{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 30px;
+    padding: 12px 12px;
+}
+
+#form-area{
+    display: flex;
+    width: 100%;
+}
+#first_section i{
+    font-size: 26px;
+    color: #9c004e;
+    padding: 4px 0 0 5px;
+}
+#form-area input{
+    width: calc(100% - 220px );
+    border: none;
+    font-family: estedad;
+    outline: none;
+}
+
+.first-BTN {
+    width: 200px;
+    border: none;
+    background-color: #9c004e;
+    color: white;
+    font-size: 15px;
+    border-radius: 25px;
+    padding: 5px 0;
+    font-family: estedad;
+}
+
+
+/* ------------------------ sec two --------------------------------- */
+
+
+#second-container{
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.detail-second-section{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 50px;
+}
+
+.image-second-section{
+    background-position: center;
+    background-size: cover;
+}
+
+.second-title{
+    font-size: 24px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.second-subtitle{
+    font-size: 15px;
+    text-align: justify
+}
+
+.second-btn{
+    background-color: #9c004e;
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 0px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* ------------------------ sec three --------------------------------- */
+
+#third_section{
+    background-color: #e0e0e073 ;
+    padding: 80px 0;
+}
+.third-title{
+    text-align: center;
+    font-size:24px ;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.third-subtitle{
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.icons-box{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.third-detail{
+    text-align: center;
+    font-weight:300 ;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+
+
+/* ------------------------ sec four --------------------------------- */
+
+#fourth_section{
+    margin: 80px 0;
+}
+.fourth-title{
+    font-size:24px ;
+    text-align: center;
+    font-weight: 700;
+}
+.card-box{
+    display: flex;
+    margin-top: 50px;
+}
+
+.informations{
+    padding: 10px 10px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    box-shadow: 0 0px 7px 0 #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.head-title{
+    font-weight: 500;
+    font-size: 15px;
+    padding: 0 0 5px 0;
+}
+.capacity_detail_fourth_section
+,.location_detail_fourth_section{
+    display: flex;
+    padding: 5px 0;
+    font-size: 13px;
+    font-weight: 300;
+    color: #acacac;
+}
+.capacity_detail_fourth_section i
+,.location_detail_fourth_section i{
+    color: #acacac;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+/* ------------------------ sec five --------------------------------- */
+
+#fifth_section{
+ background: linear-gradient(90deg, rgba(255, 255, 255, 0.384) 0%, rgba(255, 255, 255, 0.8) 35%, rgb(255, 255, 255) 90%) , url(assets/images/Mask\ Group\ 12.svg) no-repeat  ;
+ padding: 130px 0;
+}
+
+.detail-fifth-section {
+    width: 45%;
+}
+.fifth-title{
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.fifth-subtitle{
+    text-align: justify;
+   padding: 0 0 20px 10px;
+}
+.fitth-btn{
+    background-color: #9c004e;
+    text-align: center;
+    display: block;
+    border-radius: 19px;
+    padding: 10px 0px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+/* ------------------------ footer --------------------------------- */
+#sixth_section{
+    background-color: #ecebeb;
+    margin-top: 20px;
+}
+
+#sixth-container{
+    text-align: center;
+    padding: 50px 0;
+}
+
+.sixth-title{
+    font-size: 24px;
+    font-weight: 300;
+    margin: 50px 0;
+    color: #686868;
+}
+
+.footer-icon-box{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-icons{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 15%;
+    margin: 0 10px;
+    padding: 10px 0;
+    border-radius: 7px;
+}
+
+.footer-icons > i{
+    font-size: 30px;
+    padding: 10px 0;
+    color: #686868;
+}
+
+#detail{
+    font-size: 13px;
+    font-weight: 300;
+    color: #686868;
+}
+
+.down{
+    display: flex;
+    justify-content: space-between;
+}
+.right{
+    font-size: 14px;
+    font-weight: 300;
+    color: #686868;
+}
+.left i{
+    font-size: 27px ;
+    margin: 0 5px;
+    color: #686868;
+}
+
+/* ------------------------ mobile size ------------------------------------------------------------------------------------ */
+
+
+@media only screen and (max-width: 599px){
+  
+.main-container{
+    width: 100%;
+    padding: 0 15px ;
+}
+.main-container > div{
+    width: 100%;
+}  
+  
+/* ----------------------------sec one (header) ------------------------------------ */
+.image-first-section{
+    display: none;
+}
+#first_section{
+    background: url(assets/images/fifth\ section2.png) no-repeat center top #9c004e;
+    background-size: contain;
+}
+#first_section .main-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.detail-first-section{
+    padding: 20px 0 20px 0;
+}
+.first-discription{
+    padding: 0 0 10px 0;
+    font-size: 16px;
+    font-weight: 800;
+    text-align: center;
+}
+.sub-discription{
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    padding: 0 20px;
+}
+.search-bar{
+    padding: 0px 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+   
+#form-area{
+   flex-wrap: wrap;
+}
+#form-area i{
+    margin: 25px 0 0 0px;
+}
+#form-area input{
+    width: calc(100% - 25px);
+    background-color: #e0e0e098;
+    margin: 25px 0 0 0;
+    padding: 5px 5px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.first-BTN{
+    width: 100%;
+    padding: 8px 0;
+    margin: 15px 0 20px 0;
+}
+
+
+/* ----------------- sec two ------------------------------ */
+#second-container{
+    padding: 50px 15px;
+    flex-direction: column;
+}
+.image-second-section{
+    margin-top: 30px;
+}
+.detail-second-section{
+   padding-left: 0;
+}
+.second-title{
+    font-size: 20px ;
+    font-weight: 600;
+}
+.second-subtitle{
+    width: 100%;
+    padding: 30px 10px;
+    font-size: 13px;
+}
+.second-btn{
+    width: 100%;
+}
+/* ----------------- sec three ------------------------------ */
+#third_section{
+    padding: 30px 0;
+}
+.third-title{
+    font-size: 20px;
+    font-weight: 600;
+}
+.third-subtitle{
+    font-size: 13px;
+    padding: 10px 20px;
+}
+.icons-box{
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.third-img{
+    width: 150px ;
+    height: 90px;
+}
+.third-detail{
+    font-size: 13px;
+    padding-bottom: 20px;
+}
+
+/* ----------------- sec four ------------------------------ */
+#fourth_section{
+    margin: 50px 0;
+}
+.fourth-title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card-box{
+    flex-direction: column;
+    padding: 0 10px 10px 10px;
+}
+
+.col-fourth-section{
+    margin-bottom: 30px;
+}
+.card{
+    box-shadow: 0 0px 10px 0 #999999d7;
+}
+
+.head-title{
+    font-weight: 500;
+    font-size: 17px;
+}
+.capacity_detail_fourth_section div
+,.location_detail_fourth_section div {
+    font-weight: 300;
+    font-size: 13px;
+}
+/* ----------------- sec five------------------------------ */
+
+#fifth_section{
+    background: url(assets/images/fifth\ section.png)center ;
+    background-color:  #241d20d8 ;
+    background-size: cover;
+    padding: 50px 0 100px 0;
+}
+.fifth-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffff;
+}
+.fifth-subtitle{
+    font-size: 13px;
+    margin: 0 10px 20px 10px;
+    font-weight: 600;
+    color: #ffffff;
+}
+/* ----------------- footer------------------------------ */
+
+#sixth-container{
+    padding: 40px 0 20px 0;
+    margin-top: 80px;
+}
+.sixth-title{
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0 0 30px 0;
+}
+.footer-icons{
+    padding: 10px 0 0 0;
+}
+.footer-icons i{
+    font-size: 29px;
+}
+#detail{
+    font-size: 11px ;
+}
+.down{
+    flex-direction: column;
+}
+.right{
+    margin: 10px 0 20px 0;
+    font-size: 13px
+}
+.left i{
+    font-size: 30px;
+    margin: 0 10px;
+}
+}
+
+/* -------------------------------- tablet ------------------------------------------------------------------------ */
+
+@media only screen and (max-width: 1099px) and (min-width:800px){
+    .main-container{
+        max-width: 90%;
+        padding: 0 15px  ;
+    }
+    .main-container > div{
+        width: 100%;
+    }  
+/* ----------------- sec one  (header)------------------------------ */
+#first_section{
+    background-size: cover;
+}
+#first_section .main-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 90% ;
+}
+.image-first-section{
+    display: none;
+}
+.detail-first-section{
+    padding: 0px 0 40px 0;
+    text-align: center;
+        
+}
+.first-discription{
+    font-size: 30px;
+    font-weight: 700;
+    padding: 0 0 15px 0;
+}
+.sub-discription{
+    font-size: 15px;
+    font-weight: 300;
+}
+.search-bar{
+    border-radius: 7px;
+}
+#form-area{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#form-area input{
+    width: calc(100% - 25px);
+    background-color: #e0e0e098;
+    padding: 10px 7px ;
+    border-radius: 7px;
+    margin: 20px 0 0px 0;
+    font-size: 17px;
+}
+#form-area i{
+    margin: 20px 0 0 0;
+    font-size: 30px ;
+}
+.first-BTN{
+    align-self: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    margin: 30px 0 12px 0;
+}
+/* ----------------- sec two ------------------------------ */
+#second-container{
+    max-width: 90%;
+    padding: 70px 0px !important ;
+}
+.image-second-section {
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+.second-title{
+    font-size: 25px;
+    font-weight: 600;  
+}
+.second-subtitle{
+    
+    padding: 40px 20px;
+    font-size: 14px;
+    font-weight: 400 ;
+}
+
+/* ----------------- sec three ------------------------------ */
+#third_section{
+    padding: 50px 0;
+}
+.third-title{
+    font-size: 25px;
+    font-weight: 600;  
+}
+.third-detail{
+    font-size: 14px;
+}
+.third-img{
+    width: 200px ;
+    height: 100px;
+}
+/* ----------------- sec four ------------------------------ */
+.fourth-title{
+    font-size: 25px;
+    font-weight: 600;  
+}
+.head-title{
+    font-size: 14px;
+}
+
+.capacity_detail_fourth_section
+,.location_detail_fourth_section{
+    font-size: 12px;
+}
+.capacity_detail_fourth_section i
+,.location_detail_fourth_section i{
+    color: #acacac;
+    font-size: 15px;
+    padding-left: 10px;
+}
+/* ----------------- sec five ------------------------------ */
+#fifth_section{
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.753) 55%, rgb(255, 255, 255) 90%) , url(assets/images/Mask\ Group\ 12.svg) no-repeat;
+    background-size: contain;
+    margin: 40px 0;
+}
+.detail-fifth-section{
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+}
+.fifth-title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+.fifth-subtitle{
+    font-size: 13px;
+    font-weight: 400;
+    padding: 0 0 30px  0;
+}
+/* ----------------- sec six ------------------------------ */
+#sixth-container{
+    padding: 10px 0;
+}
+.sixth-title{
+    font-size: 22px;
+    font-weight: 300;
+    margin: 30px 0;
+}
+.footer-icons{
+    padding: 10px 0;
+}
+.footer-icons > i{
+    font-size: 30px;
+    padding: 15px 0;
+}
+#detail{
+    font-size: 12px;
+    font-weight: 300;
+}
+.down{
+    margin: 20px 0;
+}
+.right{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
+@media only screen and (max-width: 799px) and (min-width:600px){
+    .main-container{
+        max-width: 95%;
+        padding: 0 15px  ;
+    }
+    .main-container > div{
+        width: 100%;
+    } 
+/* ----------------------- sec one ------------------------------ */
+#first_section{
+    background-size: cover;
+    height: 400px;
+}
+#first_section .main-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.image-first-section{
+    display: none;
+}
+.detail-first-section{
+    padding: 50px 0 50px 0;
+}
+.first-discription{
+    padding: 0 0 20px 0;
+    font-size: 26px;
+    font-weight: 800;
+    text-align: center;
+}
+.sub-discription{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.search-bar{
+    padding: 14px 10px;
+    border-radius: 7px;
+}
+#form-area{
+    flex-wrap: wrap;
+}
+
+#form-area input{
+    width: calc(100% - 25px);
+    background-color: #e0e0e098;
+    padding: 5px 5px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.first-BTN{
+    width: 100%;
+    padding: 8px 0;
+    margin: 15px 0 10px 0;
+}
+/* ----------------------- sec two ------------------------------ */
+#second-container{
+    max-width: 90%;
+    padding: 60px 0px !important ;
+}
+.image-second-section {
+    display: flex;
+    justify-content: center;
+}
+.second-title{
+    font-size: 22px;
+    font-weight: 600;
+    
+}
+.second-subtitle{
+    padding: 20px 10px;
+    font-size: 13px;
+    font-weight: 400 ;
+}
+.second-btn{
+    font-size: 13px;
+    font-weight: 600;
+}
+/* ------------------------ sec three --------------------------------- */
+.third-title{
+    font-size: 22px ;
+    font-weight: 600;
+}
+.third-subtitle{
+    font-size: 13px;
+    font-weight: 300;
+    text-align: center;
+}
+.third-img{
+    width: 150px ;
+    height: 90px;
+}
+.third-detail{
+    font-size: 13px;
+}
+/* ----------------- sec four ------------------------------ */
+.fourth-title{
+    font-size: 22px;
+    font-weight: 600;
+}
+.head-title{
+    font-size: 13px;
+}
+.capacity_detail_fourth_section
+,.location_detail_fourth_section{
+    font-size: 12px;
+}
+.capacity_detail_fourth_section i
+,.location_detail_fourth_section i{
+    color: #acacac;
+    font-size: 15px;
+    padding-left: 5px;
+}
+/* ----------------- sec five ------------------------------ */
+#fifth_section{
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.753) 55%, rgb(255, 255, 255) 90%) , url(assets/images/Mask\ Group\ 12.svg) no-repeat;
+    background-size: contain;
+    padding: 30px 0;
+    margin: 40px 0;
+}
+.detail-fifth-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 60%;
+}
+.fifth-title {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+}
+.fifth-subtitle{
+    font-size: 13px;
+    font-weight: 400;
+    padding: 0 0 30px  0;
+}
+/* ----------------- sec six ------------------------------ */
+#sixth-container{
+    padding: 10px 0;
+}
+.sixth-title{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 30px 0;
+}
+.footer-icons{
+    padding: 8px 0;
+}
+.footer-icons > i{
+    font-size: 27px;
+    padding: 15px 0;
+}
+#detail{
+    font-size: 12px;
+    font-weight: 300;
+}
+.down{
+    margin: 20px 0;
+}
+.right{
+    font-size: 12px;
+    font-weight: 300;
+}
+.left i{
+    font-size: 25px;
+    margin: 0 5px;
+    color: #686868;
+  }
+
+
+}

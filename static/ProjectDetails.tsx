@@ -1,11 +1,12 @@
 import { StaticImageData } from "next/image";
 import { IpDetecor, Setting, Linkedin, LandPage, Expenses, EngScl, Js, HtmlCss, Wordpress } from "../utilities/Index"
+// import html from "../HTML_CSS/*"
 
 export interface projectItemsType {
     name: string,
     skills: string[],
     imageName: StaticImageData,
-    link: string,
+    link: string ,
     btnContent: string
 }
 
@@ -64,14 +65,14 @@ export const ProjectDetails: projectItemsType[] = [
         name: "HTML CSS",
         skills: ["Flex Box","Grid"],
         imageName: HtmlCss,
-        link: "portfolio-webdesign",
+        link: "HTML_CSS/Birthday room/index.html",
         btnContent: "نمایش پروژه‌ها"
     },
     {
         name: "Wordpress",
         skills: ["wordpress" , "elementor" ],
         imageName: Wordpress,
-            link: "",
+        link: "",
         btnContent: "نمایش پروژه‌ها"
     }
 ]

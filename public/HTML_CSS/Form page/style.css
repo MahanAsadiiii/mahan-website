@@ -1,0 +1,170 @@
+@import url(assets/stylesheets/font.css);
+@import "assets/stylesheets/reset.css";
+
+
+body{
+    box-sizing: border-box;
+    font-family: estedad;
+    background-color: white;
+}
+
+.container_fluid{
+    width: 100%; 
+}
+.container{
+    max-width: 75%;
+    margin: 0 auto;
+    display: flex;
+    
+}
+/* ---------------------------   section one   -------------------------------------- */
+#sec__one{
+    margin: 15px auto;
+    flex-direction: column ;
+}
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+.company__name{
+    font-size: 40px;
+    font-weight: 600;
+    color: #562EA0;
+}
+.line{
+    display: flex;
+    width: 60%;
+    align-self: center;
+    height: 4px;
+    margin: 0 10px;
+    background-color: #f7931e;
+}
+.logo{
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+}
+.purple__box{
+    background-color: #B8A3CE;
+    border-radius: 15px;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.context{
+    font-size: 17px;
+    font-weight: 500;
+    padding: 10px ;
+}
+.yellow__btn{
+    background-color: #f7931e;
+    padding: 10px 25px;
+    border-radius: 10px;
+    color: white;
+    
+}
+
+/* ---------------------------   section two   -------------------------------------- */
+#sec__two{
+    margin-top: 30px;
+    flex-direction: column;
+}
+.title{
+    font-size: 22px;
+    margin-bottom: 8px ;
+}
+.subtitle{
+    font-size: 13px;
+    color: #E02A2A;
+    margin-bottom: 25px;
+}
+.form__box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.form__box > form{
+    width: 100%;
+}
+.inputs_box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.info__cell{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-basis: 45%;
+    
+}
+.info__cell > label{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 5px 15px 0;
+}
+.input__area{
+    border: none;
+    background-color: #E5E5E5;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin-bottom: 30px ;
+    outline: none;
+    font-family: estedad;
+}
+#chart__list{
+    border: none;
+    background-color: #E5E5E5;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin-bottom: 30px ;
+    outline: none;
+    font-family: estedad;
+}
+#team__members{
+    outline: none;
+}
+#company_div_information{
+    display: flex;
+    flex-basis: 100%;
+}
+#company__information{
+    background-color: #E5E5E5;
+    font-size: 14px;
+    border: unset;
+    outline: none;
+    border-radius: 5px;
+    font-family: estedad;
+    padding: 5px 10px;
+    flex-basis: 100%;
+}
+.upload__cell{
+    background-color: #E5E5E5;
+    padding: 15px 20px ;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+#sumbit__btn{
+    margin: 0 auto;
+    background-color: #f7931e;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px 25px;
+    border: none;
+    font-family: estedad;
+    margin-bottom: 50px;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>فرم درخواست سرمایه</title>
+</head>
+<body>
+    <section class="container_fluid">
+
+        <div class="container" id="sec__one">
+            <div class="header">
+                <div class="company__name">فرم درخواست سرمایه</div>
+                <div class="line"></div>
+                <div class="logo">
+                    <img src="assets/images/logo-orange.svg" alt="">
+                </div>
+            </div>
+            <div class="purple__box">
+                <div class="context">کارآفرین گرامی از زمان تکمیل فرم وآپلود فایل پیج دک، در حداکثر یک هفته کاری نتیجه ارزیابی اولیه طرح به شما اطلاع داده خواهد شد.</div>
+                <div>
+                    <a class="yellow__btn"> دانلود فایل</a>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="container_fluid">
+        <div class="container" id="sec__two">
+            <div class="context__box">
+                <div class="title">فرم زیرراتکمیل نمایید</div>
+                <div class="subtitle">تکمیل تمامی فیلدها ضروری میباشند.</div>
+            </div>
+            <div class="form__box" >
+                <form action="">
+                <div class="inputs_box">
+                    <div class="info__cell">
+                        <label for="name&lastname">نام و نام خانوادگی</label>
+                        <input class="input__area" type="text" name="" id="name&lastname" required >
+                    </div>
+                    <div class="info__cell">
+                        <label for="birth-date">تاریخ تولد</label>
+                        <input class="input__area" type="date" name="" id="birth-date" placeholder="1376" maxlength="4" required >
+                    </div>
+                </div>
+                <div class="inputs_box">
+                    <div class="info__cell">
+                        <label for="email__input">آدرس ایمیل </label>
+                        <input class="input__area" type="email" name="" id="email__input" placeholder="google@gmail.com" required>
+                    </div>
+                    <div class="info__cell">
+                        <label for="phone__number">شماره تماس</label>
+                        <input class="input__area" type="number" name="" id="phone__number" maxlength="11" required>
+                    </div>
+                </div>
+                <div class="inputs_box">
+                    <div class="info__cell">
+                        <label for="address">آدرس شرکت</label>
+                        <input class="input__area" type="text" name="" id="address" >
+                    </div>
+                    <div class="info__cell">
+                        <label for="company__name">نام کسب وکار</label>
+                        <input class="input__area" type="text" name="" id="company__name" required>
+                    </div>
+                </div>
+                <div class="inputs_box">
+                    <div class="info__cell">
+                        <label for="website__address">آدرس وب سایت یا اپلیکیشن</label>
+                        <input class="input__area" type="url" name="" id="website__address" >
+                    </div>
+                    <div class="info__cell">
+                        <label for="chart__list">طرح شما درکدام یک ازدسته بندی های زیرقرار می گیرد؟</label>
+                        <select name="category" id="chart__list" required>
+                            <option disabled selected>طرح خود را انتخاب کنید </option>
+                            <option value="">اشتغال و کارآفرینی</option>
+                            <option value="">مدد کاری</option>
+                            <option value="">فرهنگ و آگاهی</option>
+                            <option value="">زیرساخت و انرژی</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="inputs_box">
+                    <div class="info__cell">
+                        <label for="budget">میزان سرمایه درخواستی</label>
+                        <input class="input__area" type="nuumber" name="" id="budget" placeholder="1.000.000T" required >
+                    </div>
+                    <div class="info__cell">
+                        <label for="team__members">تعداداعضای تیم</label>
+                        <input class="input__area" type="number" name="" id="team__members" >
+                    </div>
+                </div>
+                <div class="inputs_box">
+
+                    <div class="info__cell" id="company_div_information">
+                        <label for="company__information">کسب وکارخودرا کوتاه معرفی نمایید.</label>
+                        <textarea name="" id="company__information"  cols="30" rows="5" required dir="rtl"></textarea>
+                    </div>
+                    
+                </div>
+                <div class="inputs_box">
+                   
+                    <div class="upload__cell">
+                        <label for="img__box">  آپلود فایل     
+                        <img src="assets/images/upload.svg" alt="upload" id="img__box"></img>
+                    </label>
+                    </div>
+
+                </div>
+                <div class="inputs_box" >
+                    <input type="submit" value="ثبت" id="sumbit__btn">
+                </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
