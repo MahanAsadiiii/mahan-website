@@ -25,7 +25,7 @@ const WorkExperinece = () => {
                                 <div className="flex gap-4">
                                     {item.webSiteAdd?.map((address,index) => {
                                         return (
-                                            <Link key={index} href={address} className='text-sm md:text-base '>{address}</Link>
+                                            <Link target='_blank' key={index} href={address} className='text-sm md:text-base '>{address}</Link>
                                         )
                                     })}
                                 </div>
