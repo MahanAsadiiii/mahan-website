@@ -23,9 +23,9 @@ const WorkExperinece = () => {
                                 <h3 style={{ direction: "ltr" }} className="text-sm md:text-base text-end ">{item.period}</h3>
                                 <p className="text-sm md:text-base text-justify">{item.shortDesc}</p>
                                 <div className="flex gap-4">
-                                    {item.webSiteAdd?.map((address) => {
+                                    {item.webSiteAdd?.map((address,index) => {
                                         return (
-                                            <Link href={address} className='text-sm md:text-base '>{address}</Link>
+                                            <Link key={index} href={address} className='text-sm md:text-base '>{address}</Link>
                                         )
                                     })}
                                 </div>
