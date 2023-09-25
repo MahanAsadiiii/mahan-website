@@ -33,7 +33,7 @@ html{
   h4{
     font-family: Estedad-regular;
   }
-  h5{
+  h5,:link{
     font-family: Estedad-semibold;
   }
 

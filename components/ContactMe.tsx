@@ -7,7 +7,7 @@ const ContactMe = () => {
     const openMessage = () => {
       message.loading({ content: 'Loading...', className: "text-lg"});
       setTimeout(() => {
-        message.success({ content: 'Successfully set', duration: 2, className: "text-lg" });
+        message.success({ content: 'Successfully sent', duration: 2, className: "text-lg" });
       }, 3000);
     };
   

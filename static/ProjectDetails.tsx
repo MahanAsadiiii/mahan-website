@@ -34,7 +34,7 @@ export const ProjectDetails: projectItemsType[] = [
         btnContent: "نمایش پروژه‌"
     },
     {
-        name: 'Ip Detector',
+        name: 'IP Detector',
         skills: ["JSX"],
         imageName: IpDetecor,
         link: "https://user-ip-detector.netlify.app/",
@@ -58,14 +58,14 @@ export const ProjectDetails: projectItemsType[] = [
         name: "JavaScript",
         skills: ["Vanilla JS"],
         imageName: Js ,
-        link: "portfolio-JS",
+        link: "",
         btnContent: "نمایش پروژه‌ها"
     },
     {
         name: "HTML CSS",
         skills: ["Flex Box","Grid"],
         imageName: HtmlCss,
-        link: "HTML_CSS/Birthday room/index.html",
+        link: "",
         btnContent: "نمایش پروژه‌ها"
     },
     {
