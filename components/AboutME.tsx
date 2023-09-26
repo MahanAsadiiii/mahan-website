@@ -8,7 +8,7 @@ const AboutME = () => {
             <Layout>
                 <div className="flex items-center md:mx-auto flex-col ">
                     <div className="my-2">
-                        <h1 className='text-white text-4xl md:text-5xl '>درباره من</h1>
+                        <h1 className='text-white text-3xl md:text-4xl'>درباره من</h1>
                     </div>
                     <div className="flex flex-col md:flex-row gap-7 my-7 md:my-10">
                         <div className="bg-white p-5 md:p-7 rounded-lg basis-1/2 ">

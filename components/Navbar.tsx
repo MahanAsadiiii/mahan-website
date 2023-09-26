@@ -32,15 +32,15 @@ const Navbar = () => {
     }
 
     return (
-        <div className={`${shadow && "shadow-2xl fixed bg-gradient-to-l from-zinc-500 to-slate-200 t0 md:to-30%"} rounded-b-2xl flex justify-between items-center w-full z-50 py-3 px-4 md:px-7`}>
+        <div className={`${shadow && "shadow-2xl fixed bg-gradient-to-l from-zinc-500 to-slate-200 md:to-30%"} rounded-b-2xl flex justify-between items-center w-full z-50 py-3 px-4 md:px-7`}>
             <div className="flex justify-between items-center w-full md:basis-1/5 h-full ">
                 {!shadow ?
                     <Link href={"/"}>
-                        <Image src={blackLogo} alt='/' width={100} className='md:scale-125' />
+                        <Image src={blackLogo} alt='/' width={80} className='md:scale-125' />
                     </Link>
                     :
                     <Link href={"/"}>
-                        <Image src={whiteLogo} alt='/' width={100} className='md:scale-125' />
+                        <Image src={whiteLogo} alt='/' width={80} className='md:scale-125' />
                     </Link>
                 }
             </div>
@@ -50,7 +50,7 @@ const Navbar = () => {
 
                         return (
                             <Link key={index} href={item.href} onClick={() => clickHandler(index)}>
-                                <li className={`ml-2 text-base uppercase font-[estedad-semibold] ${hover === index && 'text-violet-600 scale-125'}`}>{item.name}</li>
+                                <li className={`ml-2 text-sm uppercase font-[estedad-semibold] ${hover === index && 'text-violet-600 scale-125'}`}>{item.name}</li>
                             </Link>
                         )
                     })}

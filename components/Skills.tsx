@@ -7,7 +7,7 @@ const Skills = () => {
     return (
         <Layout idName='skills'>
             <div className="flex flex-col items-center w-full justify-center">
-                <h1 className='text-4xl md:text-5xl'>مهارت‌ها</h1>
+                <h1 className='text-3xl md:text-4xl'>مهارت‌ها</h1>
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-12 lg:gap-8 pt-10 md:pt-16 w-full ">
                     {SkillsItems.map((skill, index) => {
                         return (

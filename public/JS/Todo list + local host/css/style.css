@@ -1,0 +1,33 @@
+
+.completed-well{
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid rgb(218, 209, 209);
+  border-radius: 5px;
+  padding: 15px ;
+  margin: 15px 0;
+  left: 0;
+}
+.lable__Li{
+font-size: 20px;
+}
+#todoList li{
+  list-style-type: none;
+}
+.Uncompleted-well{
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid rgb(218, 209, 209);
+  border-radius: 5px;
+  padding: 15px ;
+  margin: 15px 0;
+  left: 0;
+}
+.Unlable__Li{
+  color: #afa7a7;
+  font-size: 20px;
+  text-decoration: line-through;
+}
+#todoList .btn{
+  margin-left: 10px;
+}

@@ -16,7 +16,6 @@ export default function Home() {
       <AboutME />
       <Skills />
       <TimeLine />
-      <ModalObject />
       <ContactMe />
     </>
   )

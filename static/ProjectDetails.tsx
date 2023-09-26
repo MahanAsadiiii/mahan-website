@@ -62,7 +62,7 @@ export const ProjectDetails: projectItemsType[] = [
         btnContent: "نمایش پروژه‌ها"
     },
     {
-        name: "HTML CSS",
+        name: "HTML-CSS",
         skills: ["Flex Box","Grid"],
         imageName: HtmlCss,
         link: "",
@@ -70,7 +70,7 @@ export const ProjectDetails: projectItemsType[] = [
     },
     {
         name: "Wordpress",
-        skills: ["wordpress" , "elementor" ],
+        skills: ["Wordpress" , "Elementor" ],
         imageName: Wordpress,
         link: "",
         btnContent: "نمایش پروژه‌ها"

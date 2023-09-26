@@ -15,12 +15,12 @@ html{
     font-family: estedad;
   }
 
-  h1,h2,h3,h4,h5,h6 {
+  h1,h2,h3,h4,h5 {
     @apply font-bold
   }
 
   h1 {
-    @apply text-xl md:text-2xl lg:text-4xl;
+    @apply text-xl md:text-2xl lg:text-3xl;
     font-family: Estedad-semibold;
   }
 
@@ -33,19 +33,22 @@ html{
   h4{
     font-family: Estedad-regular;
   }
-  h5,:link{
+  h5{
     font-family: Estedad-semibold;
   }
-
+  h6{
+    font-family: Estedad-medium;
+  }
+  :link{
+    font-family: Estedad-medium;
+  }
   li{
     @apply cursor-pointer;
     font-family: Estedad-Regular;
   }
 
   button {
-    @apply shadow-xl shadow-gray-400 bg-gradient-to-r from-[#5651e5] to-[#709dff]  text-white;
     font-family: Estedad-Regular;
-    /* from-[#5651e5] to-[#709dff] from-[#50b850] to-[#9ace9a] */
   } 
 
   p{
@@ -56,4 +59,8 @@ html{
     font-family: "Estedad-regular";
   }
   
+}
+
+.ant-btn{
+display: none;
 }
