@@ -25,11 +25,11 @@ export const SkillsItems: SkillsType[] = [
         ImageName: Typescript,
     },
     {
-        name: "React",
+        name: "React.Js",
         ImageName: React,
     },
     {
-        name: "Next",
+        name: "Next.Js",
         ImageName: NextJs,
     },
     {

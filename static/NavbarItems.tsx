@@ -14,16 +14,16 @@ export const NavbarItems: NavbarType[] = [
         href: "/#projects"
     },
     {
+        name: "تایم لاین",
+        href: "/#timeline"
+    },
+    {
         name: "درباره من",
         href: "/#about-me"
     },
     {
         name: "مهارت‌ها",
         href: "/#skills"
-    },
-    {
-        name: "تایم لاین",
-        href: "/#timeline"
     },
     {
         name: "تماس با من",

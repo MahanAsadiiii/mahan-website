@@ -32,7 +32,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className={`${shadow && "shadow-2xl fixed bg-gradient-to-l from-zinc-500 to-slate-200 md:to-30%"} rounded-b-2xl flex justify-between items-center w-full z-50 py-3 px-4 md:px-7`}>
+        <div className={`${shadow && "shadow-2xl fixed bg-gradient-to-l from-violet-600 to-slate-200 from-15% md:to-30%"} rounded-b-2xl flex justify-between items-center w-full z-50 py-3 px-4 md:px-7`}>
             <div className="flex justify-between items-center w-full md:basis-1/5 h-full ">
                 {!shadow ?
                     <Link href={"/"}>

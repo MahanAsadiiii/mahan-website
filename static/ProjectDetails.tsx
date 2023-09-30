@@ -14,7 +14,7 @@ export interface projectItemsType {
 export const ProjectDetails: projectItemsType[] = [
     {
         name: 'Online English School',
-        skills: ["TypeScript", "ReactRouter", "Tailwind", "Github", "Netlify"],
+        skills: ["TypeScript", "ReactRouter", "Tailwind", "Github"],
         imageName: EngScl,
         link: "https://online-english-school.netlify.app",
         btnContent: "نمایش پروژه‌"

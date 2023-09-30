@@ -13,9 +13,9 @@ export default function Home() {
       <Navbar />
       <Main />
       <Projects />
+      <TimeLine />
       <AboutME />
       <Skills />
-      <TimeLine />
       <ContactMe />
     </>
   )

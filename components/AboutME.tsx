@@ -22,9 +22,9 @@ const AboutME = () => {
                                 بااین کار به رشد و پیشرفت خودم و تیم کاریم کمک کنم.
                             </p>
                         </div>
-                        <div className="bg-white rounded-lg p-5 md:p-7 md:basis-1/2 flex justify-between ">
-                            <h3 className='basis-3/5 md:basis-2/4 text-lg md:text-2xl flex justify-around'>ویژگی‌ها و اخلاق فردی:</h3>
-                            <ul className='mt-12 basis-2/5'>
+                        <div className="bg-white rounded-lg p-5 md:p-7 md:basis-1/2 flex flex-col lg:flex-row justify-start gap-10 w-full">
+                            <h3 className='lg:basis-3/5 pt-2 text-lg md:text-2xl flex justify-around'>ویژگی‌ها و اخلاق فردی:</h3>
+                            <ul className='lg:mt-12 flex flex-col pr-14 '>
                                 {Character.map((feature,index) => {
                                     return (
                                         <li key={index} className='list-disc md:text-lg font-[estedad-regular] cursor-default'>{feature.name}</li>
