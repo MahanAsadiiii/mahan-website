@@ -7,26 +7,26 @@ export type NavbarType = {
 export const NavbarItems: NavbarType[] = [
     {
         name: "ابتدای صفحه",
-        href: "/#home"
+        href: "home"
     },
     {
         name: "پروژه‌ها",
-        href: "/#projects"
+        href: "projects"
     },
     {
         name: "تایم لاین",
-        href: "/#timeline"
+        href: "timeline"
     },
     {
         name: "درباره من",
-        href: "/#about-me"
+        href: "about-me"
     },
     {
         name: "مهارت‌ها",
-        href: "/#skills"
+        href: "skills"
     },
     {
         name: "تماس با من",
-        href: "/#contact-me"
+        href: "contact-me"
     },
 ]

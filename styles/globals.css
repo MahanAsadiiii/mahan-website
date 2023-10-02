@@ -64,3 +64,8 @@ html{
 .ant-btn{
 display: none;
 }
+
+.nav-item .active{
+  color: blue;
+  transform: scale(1.5);
+}
