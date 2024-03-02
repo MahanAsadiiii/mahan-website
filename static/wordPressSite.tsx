@@ -17,6 +17,16 @@ export const wordPressSites: wordpressType[] = [
         id: 2,
         name: "گروه املاک رهنما",
         link: "https://amlakrahnama.com",
-    }
+    },
+    {
+        id: 3,
+        name: "دیزل کوماتسو",
+        link: "https://www.dieselkomatsu.com/",
+    },
+    {
+        id: 4,
+        name: "هاب - هوشمند اول بهشتی ",
+        link: "https://mcihub.ir/",
+    },
 
 ]
