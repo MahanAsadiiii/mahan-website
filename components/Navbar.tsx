@@ -26,7 +26,7 @@ const Navbar = () => {
             }
             if (prevScrollPos > currentScrollPos) {
                 headerElement.style.transform = "translateY(0)"
-            } else {
+            } else if(currentScrollPos > prevScrollPos && currentScrollPos > 100) {
                 headerElement.style.transform = "translateY(-150px)"
             }
             prevScrollPos = currentScrollPos
@@ -98,8 +98,8 @@ const Navbar = () => {
                         <ul className=''>
                             {NavbarItems.map((item, index) => {
                                 return (
-                                    <li className={`py-4 font-[estedad-semibold] hover:text-violet-400 hover:scale-125 duration-500 hover:-translate-x-8 max-w-fit`}>
-                                        <Link to={item.href} spy={true} smooth={true} offset={-50} duration={500} key={index} activeStyle={{ color: "blueviolet", paddingRight:"32px" , fontSize:"20px"}} onClick={clickHandler} >
+                                    <li key={index} className={`py-4 font-[estedad-semibold] hover:text-violet-400 hover:scale-125 duration-500 hover:-translate-x-8 max-w-fit`}>
+                                        <Link to={item.href} spy={true} smooth={true} offset={-50} duration={500}  activeStyle={{ color: "blueviolet", paddingRight:"32px" , fontSize:"20px"}} onClick={clickHandler} >
                                             {item.name}
                                         </Link>
                                     </li>
