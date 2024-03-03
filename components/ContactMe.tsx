@@ -6,7 +6,7 @@ import { useFormik } from "formik";
 import * as Yup from 'yup';
 
 const onSubmit = async (values: any, formik: any) => {
-  const response = await fetch("https://formsubmit.co/mahan.asadiiii@gmail.com", {
+  const response = await fetch("https://formsubmit.co/7f166d31eb66846557469ae88554b1a9", {
     method: "POST",
     body: values,
   })
