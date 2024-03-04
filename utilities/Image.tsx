@@ -18,11 +18,12 @@ import Linkedin from "../public/projects/linkedin.png"
 import Setting from "../public/projects/password.png"
 import IpDetecor from "../public/projects/user-ip-detector.png"
 import HtmlCss from "../public/projects/browser.png"
+import AdvancedReact from "../public/certificate/Coursera Advanced React.png"
 
 export {
     whiteLogo, blackLogo, MainGif, heroPic,
     Html, Css, Js, React, Tailwind, Wordpress
-    , Typescript, NextJs, Github,
+    , Typescript, NextJs, Github,AdvancedReact,
     IpDetecor, Setting, Linkedin, LandPage, 
     Expenses, EngScl,HtmlCss
 }

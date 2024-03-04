@@ -14,6 +14,10 @@ export const NavbarItems: NavbarType[] = [
         href: "projects"
     },
     {
+        name: "گواهی",
+        href: "certificate"
+    },
+    {
         name: "تایم لاین",
         href: "timeline"
     },
