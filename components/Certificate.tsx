@@ -12,7 +12,7 @@ const Certificate = () => {
           {CertificateDetails.map((certificate, index) => {
             return (
               <div key={index} className="relative flex items-center justify-center shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-violet-500 to-violet-300 h-80 hover:scale-105 ease-in duration-300 px-2 py-3 max-h-64 ">
-                <Image src={certificate.imageName} height={250} alt='skills-logo' className='rounded-md group-hover:opacity-5' />
+                <Image src={certificate.imageName} height={250} alt='skills-logo' className='rounded-md group-hover:opacity-5' loading='lazy'/>
                 <div className="hidden group-hover:flex flex-col justify-between items-center absolute w-full h-full px-6 py-4 duration-300 ease-in-out">
                   <h3 className='text-xl lg:text-xl text-white tracking-wider text-center '>{certificate.name}</h3>
                   <ul style={{ direction: 'ltr' }} className='flex-col items-center justify-center pb-4 pt-2 ltr'>
