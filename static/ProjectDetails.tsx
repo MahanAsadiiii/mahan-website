@@ -1,6 +1,5 @@
 import { StaticImageData } from "next/image";
 import { IpDetecor, Setting, Linkedin, LandPage, Expenses, EngScl, Js, HtmlCss, Wordpress } from "../utilities/Index"
-// import html from "../HTML_CSS/*"
 
 export interface projectItemsType {
     name: string,

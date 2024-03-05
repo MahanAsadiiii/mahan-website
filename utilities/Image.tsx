@@ -18,7 +18,7 @@ import Linkedin from "../public/projects/linkedin.png"
 import Setting from "../public/projects/password.png"
 import IpDetecor from "../public/projects/user-ip-detector.png"
 import HtmlCss from "../public/projects/browser.png"
-import AdvancedReact from "../public/certificate/Coursera Advanced React.png"
+import AdvancedReact from "../public/certificate/CourseraAdvancedReact.png"
 
 export {
     whiteLogo, blackLogo, MainGif, heroPic,
