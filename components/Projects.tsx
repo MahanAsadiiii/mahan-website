@@ -1,14 +1,19 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Link from 'next/link'
 import { Layout, ModalObject } from './Index'
 import Image from 'next/image'
 import { ProjectDetails, wordPressSites, JsProjects , HtmlProjects } from '@/static/Index'
 
 const Projects = () => {
+
+    const projectRef = useRef(null)
+
+    
+
     return (
         <Layout idName='projects'>
             <h1 className="text-center text-3xl md:text-4xl">پروژه‌ها</h1>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 pt-10 mx-4">
+            <div ref={projectRef} className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 pt-10 mx-4">
                 {ProjectDetails.map((project, index) => {
                     return (
                         <div key={index} className="relative flex items-center justify-center shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-violet-500 to-violet-300 h-80 hover:scale-105 ease-in duration-300 px-2 py-3 max-h-64 ">
