@@ -50,7 +50,7 @@ export const ProjectDetails: projectItemsType[] = [
         name: 'Linkedin Analysing',
         skills: ["JSX" , "Figma","Responsive"],
         imageName: Linkedin,
-        link: "https://linkedin-analyze.netlify.app",
+        link: "https://coruscating-salamander-956af9.netlify.app",
         btnContent: "نمایش پروژه‌"
     },
     {
