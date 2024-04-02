@@ -3,6 +3,7 @@ import blackLogo from "../public/assets/blackLogo.svg"
 import MainGif from "../public/assets/Intro.gif"
 import heroPic from "../public/assets/heroPic.jpg"
 import helloGif from "../public/assets/hello.json"
+import loadingGif from "../public/assets/loading.json"
 import Html from "../public/skills/htmlPic.png"
 import Css from "../public/skills/css.png"
 import Js from "../public/skills/Js.png"
@@ -22,9 +23,9 @@ import HtmlCss from "../public/projects/browser.png"
 import AdvancedReact from "../public/certificate/CourseraAdvancedReact.png"
 
 export {
-    whiteLogo, blackLogo, MainGif, heroPic, helloGif,
+    whiteLogo, blackLogo, MainGif, heroPic, helloGif, loadingGif,
     Html, Css, Js, React, Tailwind, Wordpress
-    , Typescript, NextJs, Github,AdvancedReact,
-    IpDetecor, Setting, Linkedin, LandPage, 
-    Expenses, EngScl,HtmlCss
+    , Typescript, NextJs, Github, AdvancedReact,
+    IpDetecor, Setting, Linkedin, LandPage,
+    Expenses, EngScl, HtmlCss
 }

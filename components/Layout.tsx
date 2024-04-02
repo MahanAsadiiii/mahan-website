@@ -1,13 +1,14 @@
 import React, { ReactNode } from 'react';
 
+
 interface LayoutProps {
     children: ReactNode;
     idName?:string;
 }
+const Layout = ({ idName, children }: LayoutProps) =>{
 
-function Layout({ idName, children }: LayoutProps): React.ReactElement {
     return (
-        <div id={idName} className='px-6 py-14 lg:px-0 lg:py-16 w-full max-w-6xl mx-auto cursor-default'>
+        <div id={idName} className={`px-6 py-14 lg:px-0 lg:py-16 w-full max-w-6xl mx-auto cursor-default`}>
             {children} 
         </div>
     );
