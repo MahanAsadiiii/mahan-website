@@ -1,71 +1,63 @@
-@import './fonts.css';
+@import "./fonts.css";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html{
-  scroll-behavior: smooth
+html {
+  scroll-behavior: smooth;
 }
 
 @layer base {
-  body{
+  body {
     @apply tracking-wide;
     direction: rtl;
-    font-family: estedad;
-  }
-
-  h1,h2,h3,h4,h5 {
-    @apply font-bold
+    @apply dark:bg-[#0C0A09] dark:text-white bg-[#FAFAFA] text-[#1f2937];
   }
 
   h1 {
-    @apply text-xl md:text-2xl lg:text-3xl;
-    font-family: Estedad-semibold;
+    @apply font-[Estedad-extrabold] text-3xl md:text-[40px] mb-10 drop-shadow-md;
   }
 
   h2 {
-    @apply text-3xl sm:text-4xl
+    @apply text-3xl sm:text-4xl font-[Estedad-semibold];
   }
-  h3{
+  h3 {
     font-family: Estedad-semibold;
   }
-  h4{
+  h4 {
     font-family: Estedad-regular;
   }
-  h5{
-    font-family: Estedad-semibold;
-  }
-  h6{
+  h6 {
     font-family: Estedad-medium;
   }
-  :link{
+  :link {
     font-family: Estedad-medium;
   }
-  li{
+  li {
     @apply cursor-pointer;
     font-family: Estedad-Regular;
   }
 
   button {
-    font-family: Estedad-Regular;
-  } 
+    font-family: Estedad-medium;
+  }
 
-  p{
+  p {
     font-family: "Estedad-regular";
   }
-  
-  input,textarea{
+
+  input,
+  textarea {
     font-family: "Estedad-regular";
   }
-  
 }
 
-.ant-btn{
-display: none;
+.ant-btn {
+  display: none;
 }
 
-.nav-item .active{
+.nav-item .active {
   color: blue;
   transform: scale(1.5);
 }

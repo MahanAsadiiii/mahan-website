@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import { Link } from "react-scroll"
 import { NavbarItems } from '@/static/Index'
@@ -30,9 +30,8 @@ const Navbar = () => {
             if (prevScrollPos > currentScrollPos) {
                 headerElement.style.transform = "translateY(0) "
                 setShadow(true)
-            } else if (currentScrollPos > prevScrollPos && currentScrollPos > 100) {
+            } else if (currentScrollPos > prevScrollPos && currentScrollPos > 30) {
                 headerElement.style.transform = "translateY(-150px)"
-                setShadow(false)
             }
             prevScrollPos = currentScrollPos
         }
@@ -44,7 +43,7 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleShadow = () => {
-            if (window.scrollY <= 80) {
+            if (window.scrollY <= 50) {
                 setShadow(false)
             }
         }
@@ -57,14 +56,14 @@ const Navbar = () => {
 
     return (
         <>
-            <div ref={headerRef} className={`${nav && 'hidden'} ${shadow && "shadow-2xl fixed bg-gradient-to-l from-violet-600 to-slate-200 from-0% md:to-25%"} dark:to-yellow-500
-            ease-in duration-500 rounded-b-2xl flex justify-between md:justify-around items-center w-full z-50 py-4 px-4 md:px-7 `}>
-                <div className="md:basis-3/5 md:px-4 md:order-2">
-                    <ul className='hidden md:flex justify-evenly'>
+            <div ref={headerRef} className={`${nav && 'hidden'} fixed ${shadow && 'shadow-md z-10 bg-white dark:bg-neutral-800'}
+            ease-in-out duration-500 flex justify-between md:justify-around items-center w-full z-50 py-4 px-4 md:px-7 md:max-h-20 min`}>
+                <div className="md:basis-3/5 md:px-4 md:order-2 h-full">
+                    <ul className='hidden md:flex justify-evenly items-center h-full'>
                         {NavbarItems.map((item, index) => {
                             return (
-                                <Link key={index} to={item.href} spy={true} smooth={true} offset={-30} duration={600} activeStyle={{ color: "blueviolet", scale: '1.3' }} >
-                                    <li className={`ml-2 text-sm uppercase font-[estedad-semibold] hover:text-violet-400 hover:scale-125 duration-50 ease-linear `}>{item.name}</li>
+                                <Link key={index} to={item.href} spy={true} smooth={true} offset={-30} duration={600} activeStyle={{ borderBottom: '2px solid', scale: '1.2' }} >
+                                    <li className={`ml-2 text-sm uppercase font-[estedad-semibold]  hover:text-violet-700 duration-300 ease-linear pb-2 leading-[60px]`}>{item.name}</li>
                                 </Link>
                             )
                         })}
@@ -75,7 +74,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="flex justify-center items-center max-w-fit h-full md:order-1">
-                    {(!shadow && !dark) ?
+                    {(!dark) ?
                         (<Link to={"home"} smooth={true} offset={-50} duration={700}>
                             <Image src={blackLogo} alt='logo' width={80} className='md:scale-110 cursor-pointer' />
                         </Link>)

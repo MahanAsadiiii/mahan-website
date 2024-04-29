@@ -9,16 +9,16 @@ export default function Home() {
   const { dark } = useTheme()
 
   return (
-    <div className={`${dark ? 'bg-[#0C0A09] text-white' : 'bg-[#FAFAFA] text-[#1f2937]'}`}>
+    <div>
       <Head>
         <title>Mahan | front-end Developer</title>
       </Head>
       <Navbar />
       <Main />
-      <Projects />
-      <Certificate />
       <TimeLine />
       <AboutME />
+      <Projects />
+      <Certificate />
       <Skills />
       <ContactMe />
     </div>

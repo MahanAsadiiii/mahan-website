@@ -2,21 +2,21 @@ import React, { useRef } from 'react'
 import Link from 'next/link'
 import { Layout, ModalObject } from './Index'
 import Image from 'next/image'
-import { ProjectDetails, wordPressSites, JsProjects , HtmlProjects } from '@/static/Index'
+import { ProjectDetails, wordPressSites, JsProjects, HtmlProjects } from '@/static/Index'
 
 const Projects = () => {
 
     const projectRef = useRef(null)
 
-    
+
 
     return (
         <Layout idName='projects'>
-            <h1 className="text-center text-3xl md:text-4xl">پروژه‌ها</h1>
+            <h1 className="text-center ">پروژه‌ها</h1>
             <div ref={projectRef} className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 pt-10 mx-4">
                 {ProjectDetails.map((project, index) => {
                     return (
-                        <div key={index} className="relative flex items-center justify-center shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-violet-500 to-violet-300 h-80 hover:scale-105 ease-in duration-300 px-2 py-3 max-h-64 ">
+                        <div key={index} className="relative flex items-center justify-center border-2 border-solid border-gray-500 shadow-md rounded-xl group hover:bg-gradient-to-r from-violet-500 to-violet-300 h-80 hover:scale-105 ease-in duration-300 px-2 py-3 max-h-64 ">
                             <Image src={project.imageName} height={160} alt='skills-logo' className='rounded-md group-hover:opacity-5' loading='lazy' />
                             <div className="hidden group-hover:flex flex-col justify-between items-center absolute w-full h-full px-6 py-4 duration-300 ease-in-out">
                                 <h3 className='text-xl lg:text-xl text-white tracking-wider text-center '>{project.name}</h3>
