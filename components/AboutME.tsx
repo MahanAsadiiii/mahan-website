@@ -6,14 +6,14 @@ import Image from 'next/image'
 
 const AboutME = () => {
     return (
-        <div id='about-me' className='bg-[#413F42] dark:bg-gray-200 w-full'>
+        <div id='about-me' className='bg-neutral-800 w-full'>
             <Layout>
                 <div className="flex items-center md:mx-auto flex-col ">
                     <div className="my-2">
-                        <h1 className='text-white dark:text-[#1f2937]'>درباره من</h1>
+                        <h1 className='text-white'>درباره من</h1>
                     </div>
-                    <div className="flex items-center gap-2">
-                        <div className="flex flex-col gap-7 my-7 md:my-10 w-1/2 dark:text-black">
+                    <div className="flex flex-col md:flex-row items-center gap-2">
+                        <div className="flex flex-col gap-7 my-7 md:my-10 md:w-1/2 dark:text-black w-full">
                             <div className="bg-white p-5 md:p-7 rounded-lg  ">
                                 <p className='md:text-lg text-justify'>
                                     سلام من <span className='text-violet-600 text-xl '>ماهان اسدی</span> هستم,
@@ -37,7 +37,7 @@ const AboutME = () => {
                             </div>
                         </div>
 
-                        <Image src={characterImg} alt="" className='w-1/2' />
+                        <Image src={characterImg} alt="" className='w-full md:w-1/2' />
 
                     </div>
                 </div>

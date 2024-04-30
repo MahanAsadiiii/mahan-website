@@ -11,7 +11,7 @@ const WorkExperinece = () => {
                 {WorkItems.map((item, index) => {
                     return (
                         <div key={index} className="flex flex-col md:w-2/3 lg:w-1/2 group cursor-default">
-                            <div className="lg:group-hover:-translate-x-60 md:group-hover:-translate-x-40 group-hover:scale-105 md:group-hover:scale-105 ease-in-out duration-1000 group-hover:shadow-2xl group-hover:p-5 rounded-xl flex flex-col gap-2 group-hover:gap-4 group-hover:bg-violet-500 group-hover:text-white ">
+                            <div className="md:group-hover:-translate-x-14 group-hover:scale-105 md:group-hover:scale-105 ease-in-out duration-1000 group-hover:shadow-2xl group-hover:p-5 rounded-xl flex flex-col gap-2 group-hover:gap-4 group-hover:bg-violet-500 group-hover:text-white ">
                                 <div className="flex flex-col md:flex-row gap-2 md:gap-5 md:items-baseline ">
                                     <div className="flex items-center gap-1">
                                         <VscCircleFilled className="group-hover:text-green-400" />
@@ -23,7 +23,7 @@ const WorkExperinece = () => {
                                 <h3 style={{ direction: "ltr" }} className="text-xs md:text-sm text-end ">{item.period}</h3>
                                 <p className="text-xs md:text-sm text-justify">{item.shortDesc}</p>
                                 <div className="flex flex-col md:flex-row gap-2 md:gap-4">
-                                    {item.webSiteAdd?.map((address,index) => {
+                                    {item.webSiteAdd?.map((address, index) => {
                                         return (
                                             <Link target='_blank' key={index} href={address} className='text-xs md:text-sm '>{address}</Link>
                                         )

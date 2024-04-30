@@ -10,10 +10,10 @@ const Main = () => {
 
     return (
         <Layout idName={'home'}>
-            <div className='w-full mx-auto flex flex-col md:flex-row md:items-center justify-between gap-14 cursor-default my-28'>
+            <div className='w-full mx-auto flex flex-col md:flex-row md:items-center justify-between gap-14 cursor-default my-16 md:my-20'>
                 <div className="flex flex-col items-center justify-end basis-1/2 gap-5 lg:gap-8 ">
-                    <h2 >
-                        <span className='text-3xl md:text-3xl lg:text-4xl'>سلام</span>, من <span className=' text-[#5651e5] dark:text-yellow-500 text-4xl md:text-4xl lg:text-5xl'>ماهان</span> هستم.
+                    <h2 className='flex flex-wrap'>
+                        <span className=' text-3xl md:text-3xl lg:text-4xl'>سلام</span>, من <span className=' text-[#5651e5] dark:text-yellow-500 text-4xl md:text-4xl lg:text-5xl'>ماهان</span> هستم.
                     </h2>
                     <p className='text-gray-600 dark:text-white max-w-[70%] text-center text-sm md:text-sm lg:text-base'>فارغ التحصیل کارشناسی مهندسی کامپیوتر, گرایش نرم افزار, که در حال حاضر به عنوان طراح و توسعه دهنده وب سایت, مشغول آموزش و کار هستم.
                     </p>
@@ -22,7 +22,7 @@ const Main = () => {
                         </button>
                     </Link>
                 </div>
-                <div className="flex gap-3 items-center justify-center basis-1/2 h-[450px] dark:bg-white px-16 rounded-full">
+                <div className="flex gap-3 items-center justify-center basis-1/2 md:h-[550px] dark:bg-gray-200 px-16 md:rounded-full rounded-md">
                     <Lottie animationData={introGif} />
                 </div>
             </div>

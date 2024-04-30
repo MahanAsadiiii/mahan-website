@@ -16,7 +16,7 @@ html {
   }
 
   h1 {
-    @apply font-[Estedad-extrabold] text-3xl md:text-[40px] mb-10 drop-shadow-md;
+    @apply font-[Estedad-extrabold] text-3xl md:text-[40px] mb-5 md:mb-10 drop-shadow-md;
   }
 
   h2 {

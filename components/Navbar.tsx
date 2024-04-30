@@ -58,12 +58,12 @@ const Navbar = () => {
         <>
             <div ref={headerRef} className={`${nav && 'hidden'} fixed ${shadow && 'shadow-md z-10 bg-white dark:bg-neutral-800'}
             ease-in-out duration-500 flex justify-between md:justify-around items-center w-full z-50 py-4 px-4 md:px-7 md:max-h-20 min`}>
-                <div className="md:basis-3/5 md:px-4 md:order-2 h-full">
+                <div className="basis-1/4 md:basis-3/5 md:px-4 md:order-2 h-full">
                     <ul className='hidden md:flex justify-evenly items-center h-full'>
                         {NavbarItems.map((item, index) => {
                             return (
                                 <Link key={index} to={item.href} spy={true} smooth={true} offset={-30} duration={600} activeStyle={{ borderBottom: '2px solid', scale: '1.2' }} >
-                                    <li className={`ml-2 text-sm uppercase font-[estedad-semibold]  hover:text-violet-700 duration-300 ease-linear pb-2 leading-[60px]`}>{item.name}</li>
+                                    <li className={`ml-2 text-sm uppercase font-[estedad-semibold]  hover:text-violet-700 duration-300 ease-linear pb-2 `}>{item.name}</li>
                                 </Link>
                             )
                         })}
@@ -93,9 +93,9 @@ const Navbar = () => {
 
             {/* below codes is for mobile hamburger menu */}
 
-            < div className={nav ? "fixed right-0 top-0 w-full h-screen bg-black/70 z-20" : ''} >
+            {/* < div className={nav ? "fixed right-0 top-0 w-full h-screen bg-black/70 z-20" : ''} >
                 <MobileMenu handleNav={handleNav} navState={nav} closerFunc={clickHandler} />
-            </ div>
+            </ div> */}
 
         </>
     )

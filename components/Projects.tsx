@@ -19,11 +19,11 @@ const Projects = () => {
                         <div key={index} className="relative flex items-center justify-center border-2 border-solid border-gray-500 shadow-md rounded-xl group hover:bg-gradient-to-r from-violet-500 to-violet-300 h-80 hover:scale-105 ease-in duration-300 px-2 py-3 max-h-64 ">
                             <Image src={project.imageName} height={160} alt='skills-logo' className='rounded-md group-hover:opacity-5' loading='lazy' />
                             <div className="hidden group-hover:flex flex-col justify-between items-center absolute w-full h-full px-6 py-4 duration-300 ease-in-out">
-                                <h3 className='text-xl lg:text-xl text-white tracking-wider text-center '>{project.name}</h3>
+                                <h3 className='text-lg font-bold lg:text-xl text-white tracking-wider text-center font-mono'>{project.name}</h3>
                                 <ul style={{ direction: 'ltr' }} className='flex-col items-center justify-center pb-4 pt-2 ltr'>
                                     {project.skills.map((skill, index) => {
                                         return (
-                                            <li key={index} className='text-base text-center text-white list-disc py-1 cursor-default'>{skill}</li>
+                                            <li key={index} className='text-base text-center text-white list-disc py-1 cursor-default font-mono'>{skill}</li>
                                         )
                                     })}
                                 </ul>
