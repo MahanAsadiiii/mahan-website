@@ -3,10 +3,9 @@ import {
   TimeLine, ContactMe, Certificate,
 } from '@/components/Index'
 import Head from 'next/head'
-import { useTheme } from '@/context/ThemeContext'
+
 
 export default function Home() {
-  const { dark } = useTheme()
 
   return (
     <div>
