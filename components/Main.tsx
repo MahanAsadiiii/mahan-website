@@ -12,8 +12,8 @@ const Main = () => {
         <Layout idName={'home'}>
             <div className='w-full mx-auto flex flex-col md:flex-row md:items-center justify-between gap-14 cursor-default my-16 md:my-20'>
                 <div className="flex flex-col items-center justify-end basis-1/2 gap-5 lg:gap-8 ">
-                    <h2 className='flex flex-wrap'>
-                        <span className=' text-3xl md:text-3xl lg:text-4xl'>سلام</span>, من <span className=' text-[#5651e5] dark:text-yellow-500 text-4xl md:text-4xl lg:text-5xl'>ماهان</span> هستم.
+                    <h2 className='flex flex-wrap items-center drop-shadow-md '>
+                        <span className=' text-3xl md:text-3xl lg:text-4xl'>سلام</span>, من <span className=' text-[#5651e5] dark:text-[#736ffa] text-4xl md:text-4xl lg:text-5xl'>ماهان</span> هستم.
                     </h2>
                     <p className='text-gray-600 dark:text-white max-w-[70%] text-center text-sm md:text-sm lg:text-base'>فارغ التحصیل کارشناسی مهندسی کامپیوتر, گرایش نرم افزار, که در حال حاضر به عنوان طراح و توسعه دهنده وب سایت, مشغول آموزش و کار هستم.
                     </p>
