@@ -73,27 +73,27 @@ const ContactMe = () => {
           <form ref={formRef} onSubmit={formik.handleSubmit}>
             <FormControl className="flex flex-col" isInvalid={!!formik.errors.fullName && formik.touched.fullName}>
               <FormLabel htmlFor="fullName" className='py-2 text-xs md:text-base font-[estedad-bold] '>نام و نام خانوادگی</FormLabel>
-              <Input id='fullName' type="text" className='border-2 rounded-lg p-3 flex border-gray-300' placeholder='نام و نام خانوادگی'  {...formik.getFieldProps("fullName")} />
+              <Input id='fullName' type="text" className='border-2 rounded-lg p-3 flex border-gray-300 text-black' placeholder='نام و نام خانوادگی'  {...formik.getFieldProps("fullName")} />
               <FormErrorMessage className='font-[estedad-bold] text-xs pr-3 pt-2 text-red-600'>{formik.errors.fullName}</FormErrorMessage>
             </FormControl>
             <FormControl className="flex flex-col" isInvalid={!!formik.errors.mobileNumber && formik.touched.mobileNumber}>
               <FormLabel htmlFor="mobileNumber" className='py-2 text-xs md:text-base font-[estedad-bold]'>شماره موبایل</FormLabel>
-              <Input id='mobileNumber' type="tel" className='border-2 rounded-lg p-3 flex border-gray-300' placeholder='09364952555' {...formik.getFieldProps('mobileNumber')} />
+              <Input id='mobileNumber' type="tel" className='border-2 rounded-lg p-3 flex border-gray-300 text-black' placeholder='09364952555' {...formik.getFieldProps('mobileNumber')} />
               <FormErrorMessage className='font-[estedad-bold] text-xs pr-3 pt-2 text-red-600'>{formik.errors.mobileNumber}</FormErrorMessage>
             </FormControl>
             <FormControl className="flex flex-col" isInvalid={!!formik.errors.email && formik.touched.email}>
               <FormLabel htmlFor="email" className='py-2 text-xs md:text-base font-[estedad-bold]'>ایمیل</FormLabel>
-              <Input id='email' type="email" className='border-2 rounded-lg p-3 flex border-gray-300' placeholder='info@mahan-asadi.ir' {...formik.getFieldProps('email')} />
+              <Input id='email' type="email" className='border-2 rounded-lg p-3 flex border-gray-300 text-black' placeholder='info@mahan-asadi.ir' {...formik.getFieldProps('email')} />
               <FormErrorMessage className='font-[estedad-bold] text-xs pr-3 pt-2 text-red-600'>{formik.errors.email}</FormErrorMessage>
             </FormControl>
             <FormControl className="flex flex-col" isInvalid={!!formik.errors.note && formik.touched.note}>
               <FormLabel htmlFor="note" className='py-2 text-xs md:text-base font-[estedad-bold]'>پیام</FormLabel>
-              <Textarea id='note' className='border-2 rounded-lg p-3 flex border-gray-300' rows={8} placeholder='متن پیام خود را وارد کنید.....' {...formik.getFieldProps('note')} />
+              <Textarea id='note' className='border-2 rounded-lg p-3 flex border-gray-300 text-black' rows={8} placeholder='متن پیام خود را وارد کنید.....' {...formik.getFieldProps('note')} />
               <FormErrorMessage className='font-[estedad-bold] text-xs pr-3 pt-2 text-red-600'>{formik.errors.note}</FormErrorMessage>
             </FormControl>
             <ReCAPTCHA id='captcha' sitekey='6LeSWYkpAAAAAF71XrjpcNU2SvS9eDLirbs6g7W7' className='pt-3' onChange={() => { setCaptcha(!captcha) }} />
             <FormErrorMessage>{captcha}</FormErrorMessage>
-            <Button isLoading={isLoading} type="submit" className='shadow-md shadow-gray-400 dark:shadow-gray-800 bg-gradient-to-r from-[#5651e5] to-[#709dff] w-full p-2 md:p-4 text-gray-100 mt-4 rounded-lg hover:scale-90 ease-in duration-300'>ارسال</Button>
+            <Button isLoading={isLoading} type="submit" className='shadow-md shadow-gray-400 dark:shadow-none bg-gradient-to-r from-[#5651e5] to-[#709dff] w-full p-2 md:p-4 text-gray-100 mt-4 rounded-lg hover:scale-90 ease-in duration-300 '>ارسال</Button>
           </form>
           <div className="flex w-full md:w-2/3 justify-around mx-auto mt-10">
             <SocialMedia size={28} />
