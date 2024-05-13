@@ -2,8 +2,11 @@ import { CertificateDetails } from '@/static/Certificate'
 import { Layout } from '../components/Index'
 import Image from 'next/image'
 import Link from 'next/link'
+import { HumanShape3, HumanShape5 } from '@/utilities/Image'
+import { useTheme } from '@/context/ThemeContext'
 
 const Certificate = () => {
+  const { dark } = useTheme()
   return (
     <Layout idName='certificate'>
       <div className="flex flex-col items-center">
@@ -27,6 +30,13 @@ const Certificate = () => {
               </div>
             )
           })}
+        </div>
+        <div className="flex justify-center mt-10">
+          {dark ?
+            <Image src={HumanShape5} alt='' className='md:w-1/2 ' />
+            :
+            <Image src={HumanShape3} alt='' className='md:w-3/5 ' />
+          }
         </div>
       </div>
     </Layout>

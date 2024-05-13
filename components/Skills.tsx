@@ -1,7 +1,8 @@
 import React from 'react'
-import Image from 'next/image'
 import { SkillsItems } from '@/static/SkillsItems'
 import { Layout } from './Index'
+import Image from 'next/image'
+
 
 const Skills = () => {
     return (

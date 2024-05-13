@@ -93,9 +93,9 @@ const Navbar = () => {
 
             {/* below codes is for mobile hamburger menu */}
 
-            {/* < div className={nav ? "fixed right-0 top-0 w-full h-screen bg-black/70 z-20" : ''} >
+            < div className={nav ? "fixed right-0 top-0 w-full h-screen bg-black/70 z-20" : ''} >
                 <MobileMenu handleNav={handleNav} navState={nav} closerFunc={clickHandler} />
-            </ div> */}
+            </ div>
 
         </>
     )

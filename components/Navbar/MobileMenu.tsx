@@ -4,29 +4,35 @@ import { Link } from "react-scroll"
 import { NavbarItems } from '@/static/Index'
 import { AiOutlineClose } from "react-icons/ai"
 import { SocialMedia } from '../Index'
-import { blackLogo} from '@/utilities/Index'
+import { blackLogo, whiteLogo } from '@/utilities/Index'
+import { useTheme } from '@/context/ThemeContext'
 
 
 interface MobileMenuProps {
-    handleNav : () => void,
-    closerFunc : () => void,
-    navState : boolean,
+    handleNav: () => void,
+    closerFunc: () => void,
+    navState: boolean,
 
 }
 
-const MobileMenu = ({navState , handleNav,closerFunc}:MobileMenuProps  ) => {
-    
+const MobileMenu = ({ navState, handleNav, closerFunc }: MobileMenuProps) => {
+    const { dark } = useTheme()
     return (
-        <div id='siderMenu' className={`h-screen ${navState ? "md:hidden fixed right-0 top-0 w-[70%] md:w-3/4 bg-[#ecf0f3] p-6 ease-in-out duration-500 rounded-l-3xl" : "fixed -right-full top-0 p-6 ease-in-out duration-1000"}`}>
+        <div id='siderMenu' className={`h-[100dvh] ${navState ? "md:hidden fixed right-0 top-0 w-[70%] md:w-3/4 dark:bg-slate-800 bg-[#ecf0f3] p-6 ease-in-out duration-500 rounded-l-3xl" : "fixed -right-full top-0 p-6 ease-in-out duration-1000"}`}>
             <div className="flex w-full items-center justify-between">
                 <Link to='home' onClick={closerFunc}>
-                    <Image src={blackLogo} alt='logo' width={80} />
+                    {dark ?
+                        <Image src={whiteLogo} alt='logo' width={80} />
+                        :
+                        <Image src={blackLogo} alt='logo' width={80} />
+                    }
                 </Link>
-                <div onClick={handleNav} className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer">
-                    <AiOutlineClose />
+                <div onClick={handleNav} className="rounded-full border-2 border-black dark:border-white p-2 cursor-pointer">
+                    <AiOutlineClose size={20} />
                 </div>
             </div>
-            <div className="border-b border-gray-500 my-4"></div>
+
+            <div className="border-b dark:border-white border-black my-4"></div>
             <div className="flex justify-between flex-col ">
                 <ul className=''>
                     {NavbarItems.map((item, index) => {
@@ -39,8 +45,8 @@ const MobileMenu = ({navState , handleNav,closerFunc}:MobileMenuProps  ) => {
                         )
                     })}
                 </ul>
-                <div className="pt-20">
-                    <p className='mb-8'>روش های ارتباطی با من</p>
+                <div className="pt-8">
+                    <p className='mb-2'>روش های ارتباطی با من</p>
                     <SocialMedia size={20} />
                 </div>
 

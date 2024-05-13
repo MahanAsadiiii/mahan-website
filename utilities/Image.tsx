@@ -19,11 +19,14 @@ import Setting from "../public/projects/password.png"
 import IpDetecor from "../public/projects/user-ip-detector.png"
 import HtmlCss from "../public/projects/browser.png"
 import AdvancedReact from "../public/certificate/CourseraAdvancedReact.png"
+import HumanShape1 from "../public/assets/top4.svg"
+import HumanShape3 from "../public/assets/notion-parade.svg"
+import HumanShape5 from "../public/assets/notion-parade-white.svg"
 
 export {
     whiteLogo, blackLogo, introGif, characterImg,
     Html, Css, Js, React, Tailwind, Wordpress
     , Typescript, NextJs, Git, AdvancedReact,
     IpDetecor, Setting, Linkedin, LandPage,
-    Expenses, EngScl, HtmlCss
+    Expenses, EngScl, HtmlCss, HumanShape1, HumanShape3, HumanShape5,
 }
