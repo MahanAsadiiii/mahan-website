@@ -7,6 +7,7 @@ import Css from "../public/skills/css.png"
 import Js from "../public/skills/Js.png"
 import React from "../public/skills/reactlogo.png"
 import Tailwind from "../public/skills/tailwind.png"
+import RestApi from "../public/skills/rest-api.svg"
 import Wordpress from "../public/skills/wordpress.png"
 import Typescript from "../public/skills/typescriptPic.png"
 import NextJs from "../public/skills/Nextjs-logo.svg.png"
@@ -25,7 +26,7 @@ import HumanShape5 from "../public/assets/notion-parade-white.svg"
 
 export {
     whiteLogo, blackLogo, introGif, characterImg,
-    Html, Css, Js, React, Tailwind, Wordpress
+    Html, Css, Js, React, Tailwind, Wordpress, RestApi
     , Typescript, NextJs, Git, AdvancedReact,
     IpDetecor, Setting, Linkedin, LandPage,
     Expenses, EngScl, HtmlCss, HumanShape1, HumanShape3, HumanShape5,
