@@ -5,7 +5,7 @@ export interface projectItemsType {
     name: string,
     skills: string[],
     imageName: StaticImageData,
-    link: string ,
+    link: string,
     btnContent: string
 }
 
@@ -13,7 +13,7 @@ export interface projectItemsType {
 export const ProjectDetails: projectItemsType[] = [
     {
         name: 'Online English School',
-        skills: ["TypeScript", "ReactRouter", "Tailwind", "Github"],
+        skills: ["TypeScript", "ReactRouter", 'Git'],
         imageName: EngScl,
         link: "https://online-english-school.netlify.app",
         btnContent: "نمایش پروژه‌"
@@ -27,7 +27,7 @@ export const ProjectDetails: projectItemsType[] = [
     },
     {
         name: 'Static Landing page',
-        skills: ["Tailwind", "NPM package","Responsive"],
+        skills: ["Tailwind", "NPM package", "Responsive"],
         imageName: LandPage,
         link: "https://landing-page-via-react.netlify.app",
         btnContent: "نمایش پروژه‌"
@@ -48,7 +48,7 @@ export const ProjectDetails: projectItemsType[] = [
     },
     {
         name: 'Linkedin Analysing',
-        skills: ["JSX" , "Figma","Responsive"],
+        skills: ["JSX", "Figma", "Responsive"],
         imageName: Linkedin,
         link: "https://coruscating-salamander-956af9.netlify.app",
         btnContent: "نمایش پروژه‌"
@@ -56,20 +56,20 @@ export const ProjectDetails: projectItemsType[] = [
     {
         name: "JavaScript",
         skills: ["Vanilla JS"],
-        imageName: Js ,
+        imageName: Js,
         link: "",
         btnContent: "نمایش پروژه‌ها"
     },
     {
         name: "HTML-CSS",
-        skills: ["Flex Box","Grid"],
+        skills: ["Flex Box", "Grid"],
         imageName: HtmlCss,
         link: "",
         btnContent: "نمایش پروژه‌ها"
     },
     {
         name: "Wordpress",
-        skills: ["Wordpress" , "Elementor" ],
+        skills: ["Wordpress", "Elementor"],
         imageName: Wordpress,
         link: "",
         btnContent: "نمایش پروژه‌ها"

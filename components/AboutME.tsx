@@ -1,7 +1,7 @@
 import { Character } from '@/static/Character'
 import React from 'react'
 import { Layout } from './Index'
-import { characterImg, HumanShape1 } from '@/utilities/Index'
+import { HumanShape1 } from '@/utilities/Index'
 import Image from 'next/image'
 
 const AboutME = () => {
