@@ -9,7 +9,7 @@ const Main = () => {
 
     return (
         <Layout idName={'home'}>
-            <div className='w-full flex flex-col md:flex-row md:items-center justify-between gap-10 cursor-default my-20 md:my-0 md:h-screen select-none '>
+            <div className='w-full flex flex-col md:flex-row md:items-center justify-between gap-10 cursor-default mt-20 md:mt-0 md:h-screen select-none '>
                 <div className="flex flex-col items-center justify-end basis-2/5 gap-3 lg:gap-8 ">
                     <h2 className='flex flex-wrap items-center drop-shadow-md '>
                         <span className=' text-3xl md:text-3xl lg:text-4xl'>سلام</span>, من <span className=' text-[#5651e5] dark:text-[#736ffa] text-4xl md:text-4xl lg:text-5xl'>ماهان</span> هستم.
