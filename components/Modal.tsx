@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Modal } from 'antd';
-import { JsType, wordpressType, JsProjects } from "../static/Index"
+import { JsType, wordpressType } from "../static/Index"
 import Link from 'next/link';
 
 interface props {
