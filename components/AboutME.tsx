@@ -18,7 +18,7 @@ const AboutME = () => {
                             <div className="bg-white px-5 py-7 md:p-7 rounded-lg md:w-1/2 ">
                                 <p className='md:text-lg text-justify'>
                                     سلام من <span className='text-violet-600 text-xl '>ماهان اسدی</span> هستم,
-                                    متولد فرودین سال 1376 با تیپ شخصیتی ESTJ.
+                                    متولد فرودین سال ۱۳۷۶ با تیپ شخصیتی ESTJ.
                                     <br />
                                     اگر بخواهم ویژگی‌ها و اخلاق کاری خودم را به طور خلاصه توضیح بدهم؛ با
                                     تعهد و آگاهی نسبت به وظایفم، همیشه سعی داشتم تا با خلاقیت فردی،

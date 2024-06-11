@@ -12,7 +12,7 @@ const EducationTimeLine = () => {
                             <VscCircleFilled className="group-hover:text-green-400" />
                             <h3 className="text-sm md:text-base group-hover:text-green-400">مدرک لیسانس</h3>
                         </div>
-                        <h3 style={{ direction: "ltr" }} className="text-sm md:text-base text-end">1394 - 1399</h3>
+                        <h3 style={{ direction: "ltr" }} className="text-sm md:text-base text-end">۱۳۹۴ - ۱۳۹۹</h3>
                         <p className="text-xs md:text-sm">
                             فارغ‌التحصیل مهندسی کامپیوتر, گرایش نرم‌افزار از دانشگاه آزاد
                             تهران شمال
@@ -25,7 +25,7 @@ const EducationTimeLine = () => {
                             <VscCircleFilled className="group-hover:text-green-400" />
                             <h3 className="text-sm md:text-base group-hover:text-green-400">مدرک دیپلم</h3>
                         </div>
-                        <h3 style={{ direction: "ltr" }} className="text-sm md:text-base text-end">1390 - 1394</h3>
+                        <h3 style={{ direction: "ltr" }} className="text-sm md:text-base text-end">۱۳۹۰ - ۱۳۹۴</h3>
                         <p className="text-xs md:text-sm">
                             مدرک دیپلم ریاضی از مدرسه خاتم.
                         </p>
