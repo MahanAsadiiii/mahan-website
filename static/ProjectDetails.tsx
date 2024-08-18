@@ -1,5 +1,5 @@
 import { StaticImageData } from "next/image";
-import { IpDetecor, Setting, Linkedin, LandPage, Expenses, EngScl, Js, HtmlCss, Wordpress } from "../utilities/Index"
+import { IpDetecor, Setting, Linkedin, LandPage, Expenses, EngScl, Js, HtmlCss, Wordpress, PiriykaLogo, QOSLogo } from "../utilities/Index"
 
 export interface projectItemsType {
     name: string,
@@ -11,6 +11,20 @@ export interface projectItemsType {
 
 
 export const ProjectDetails: projectItemsType[] = [
+    {
+        name: 'Piriyka',
+        skills: ["Next.Js", "Framer Motion"],
+        imageName: PiriykaLogo,
+        link: "https://piriyka.com/",
+        btnContent: "نمایش پروژه‌"
+    },
+    {
+        name: 'Quiz of shop',
+        skills: ['Mobile Game', 'Wordpress CMS', 'React.js', "Formik - Yup"],
+        imageName: QOSLogo,
+        link: "http://game.qos.pellex.ir/",
+        btnContent: "نمایش پروژه‌"
+    },
     {
         name: 'Online English School',
         skills: ["TypeScript", "ReactRouter", 'Git'],

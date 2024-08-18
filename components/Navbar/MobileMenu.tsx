@@ -17,6 +17,7 @@ interface MobileMenuProps {
 
 const MobileMenu = ({ navState, handleNav, closerFunc }: MobileMenuProps) => {
     const { dark } = useTheme()
+    
     return (
         <div id='siderMenu' className={`h-[100dvh] ${navState ? "md:hidden fixed right-0 top-0 w-[70%] md:w-3/4 dark:bg-slate-800 bg-[#ecf0f3] p-6 ease-in-out duration-500 rounded-l-3xl" : "fixed -right-full top-0 p-6 ease-in-out duration-1000"}`}>
             <div className="flex w-full items-center justify-between">
