@@ -1,5 +1,5 @@
 import { StaticImageData } from "next/image";
-import { Html, Css, Js, React, Tailwind, Wordpress, Typescript, NextJs, Git, RestApi, FramerMotion, GSAP } from "../utilities/Index"
+import { Html, Css, Js, React, Tailwind, Wordpress, Typescript, Git, RestApi, FramerMotion, GSAP, NextJsSkills } from "../utilities/Index"
 
 export interface SkillsType {
     name: string;
@@ -22,7 +22,7 @@ export const SkillsItems: SkillsType[] = [
     },
     {
         name: "Next.Js",
-        ImageName: NextJs,
+        ImageName: NextJsSkills,
     },
     {
         name: "Tailwind",

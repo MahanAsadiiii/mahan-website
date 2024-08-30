@@ -1,8 +1,9 @@
 import {
   Navbar, Main, AboutME, Skills, Projects,
-  TimeLine, ContactMe, Certificate,
+  TimeLine, ContactMe, Certificate, Slider
 } from '@/components/Index'
 import Head from 'next/head'
+import Swiper from 'swiper'
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <Main />
+      <Slider />
       <TimeLine />
       <AboutME />
       <Projects />

@@ -8,9 +8,9 @@ interface LayoutProps {
 const Layout = ({ idName, children }: LayoutProps) => {
 
     return (
-        <div id={idName} className={`px-4 py-8 lg:px-0 lg:py-6 w-full max-w-6xl mx-auto cursor-default`}>
+        <section id={idName} className={`px-4 py-8 lg:px-0 lg:py-6 w-full max-w-6xl mx-auto cursor-default`}>
             {children}
-        </div>
+        </section>
     );
 }
 

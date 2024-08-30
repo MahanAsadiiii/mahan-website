@@ -61,3 +61,15 @@ html {
   color: blue;
   transform: scale(1.5);
 }
+
+.swiper-wrapper {
+  height: fit-content;
+  margin-top: 60px;
+}
+
+.ProjectSlider .swiper-slide-active {
+  @apply !opacity-100;
+}
+.ProjectSlider .swiper-slide {
+  @apply opacity-75;
+}

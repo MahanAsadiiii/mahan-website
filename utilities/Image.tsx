@@ -10,7 +10,8 @@ import Tailwind from "../public/skills/tailwind.png"
 import RestApi from "../public/skills/rest-api.svg"
 import Wordpress from "../public/skills/wordpress.png"
 import Typescript from "../public/skills/typescriptPic.png"
-import NextJs from "../public/skills/Nextjs-logo.svg.png"
+import NextJsSkills from "../public/skills/Nextjs-logo.png"
+import NextJs from "../public/skills/nextjs.jpeg"
 import Git from "../public/skills/Git.png"
 import GSAP from "../public/skills/GSAP.svg"
 import FramerMotion from "../public/skills/framer-motion-logo.png"
@@ -27,11 +28,12 @@ import HumanShape3 from "../public/assets/notion-parade.svg"
 import HumanShape5 from "../public/assets/notion-parade-white.svg"
 import PiriykaLogo from "../public/projects/piriyka.png"
 import QOSLogo from "../public/projects/quiz-of-shop.png"
+import MahanWebsite from "../public/projects/mahanwebsite.png"
 
 export {
     whiteLogo, blackLogo, introGif, characterImg, FramerMotion, GSAP,
     Html, Css, Js, React, Tailwind, Wordpress, RestApi
-    , Typescript, NextJs, Git, AdvancedReact, PiriykaLogo,
+    , Typescript, NextJsSkills, NextJs, Git, AdvancedReact, PiriykaLogo,
     IpDetecor, Setting, Linkedin, LandPage, QOSLogo,
-    Expenses, EngScl, HtmlCss, HumanShape1, HumanShape3, HumanShape5,
+    Expenses, EngScl, HtmlCss, HumanShape1, HumanShape3, HumanShape5, MahanWebsite,
 }

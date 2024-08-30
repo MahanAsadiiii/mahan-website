@@ -19,9 +19,9 @@ const ToggleButton = () => {
                     rotation: 360,
                     x: 56,
                     duration: 0.15,
-                    ease: 'bounce.out',
-                    yoyo: true,
-                    repeat: 2,
+                    // ease: 'bounce.inOut',
+                    // yoyo: true,
+                    // repeat: 2,
                 }
             );
     }, { scope: buttonContainerRef });
