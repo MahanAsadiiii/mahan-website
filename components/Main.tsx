@@ -1,4 +1,4 @@
-import Reac from 'react'
+import React from 'react'
 import { motion } from "framer-motion";
 import { Layout } from './Index'
 import Link from 'next/link';
@@ -35,12 +35,6 @@ const containerVariants = {
 
 
 const Main = () => {
-    // const ref = useRef(null)
-    // const isInView = useInView(ref, {
-    //     amount: "all",
-    // })
-
-
 
     return (
         <Layout idName={'home'}>
