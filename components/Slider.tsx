@@ -23,10 +23,10 @@ const Slider = () => {
     const id = useId();
     const Projects = [...NextJsProjects, ...ReactProjects]
     const topFourProjects = Projects.slice(0, 5);
-    const ref = useRef(null)
-    const isInView = useInView(ref, {
-        amount: "all",
-    })
+    // const ref = useRef(null)
+    // const isInView = useInView(ref, {
+    //     amount: "all",
+    // })
 
 
     // useEffect(() => {
@@ -38,13 +38,11 @@ const Slider = () => {
             <motion.div className=""
                 variants={sliderVariants}
                 initial="hidden"
-                // animate={isInView ? "visible" : "hidden"} // Trigger animation when in view
-                ref={ref}
+                animate="visible" // Trigger animation when in view
             >
                 <h1 className='text-center'>آخرین پروژه‌ها</h1>
 
-
-                {/* <Swiper
+                <Swiper
                     effect={'coverflow'}
                     autoplay={{
                         delay: 500,
@@ -85,7 +83,7 @@ const Slider = () => {
                             </Link>
                         </SwiperSlide>
                     ))}
-                </Swiper> */}
+                </Swiper>
             </motion.div>
         </Layout>
     )
