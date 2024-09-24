@@ -20,7 +20,7 @@ const ContactMe = () => {
       setLoading(false)
     } else {
       emailjs
-        .sendForm('service_tebfp86', 'template_sa0evgg', formRef.current, {
+        .sendForm('service_qz27neo', 'template_sa0evgg', formRef.current, {
           publicKey: 'rT74FeaTptIuS61wT',
         })
         .then(
