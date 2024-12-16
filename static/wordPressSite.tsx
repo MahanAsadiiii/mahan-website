@@ -10,33 +10,33 @@ export type wordpressType = {
 export const wordPressSites: wordpressType[] = [
     {
         id: 1,
-        name: "شرکت بهران پیشرو",
-        link: "https://behranpishro.com",
-    },
-    // {
-    //     id: 2,
-    //     name: "گروه املاک رهنما",
-    //     link: "https://amlakrahnama.com",
-    // },
-    {
-        id: 3,
-        name: "دیزل کوماتسو",
-        link: "https://www.dieselkomatsu.com/",
-    },
-    {
-        id: 4,
         name: "هاب - هوشمند اول بهشتی ",
         link: "https://mcihub.ir/",
     },
     {
-        id: 5,
+        id: 2,
         name: "استاتیک استودیو",
         link: "http://staticstudio.ir/",
     },
     {
-        id: 6,
+        id: 3,
         name: "بهساز ماشین",
         link: "http://behsaz-machine.com/",
     },
+    {
+        id: 4,
+        name: "شرکت بهران پیشرو",
+        link: "https://behranpishro.com",
+    },
+    {
+        id: 5,
+        name: "آمازونیکس",
+        link: "https://amazonix.ir",
+    },
+    // {
+    //     id: 3,
+    //     name: "دیزل کوماتسو",
+    //     link: "https://www.dieselkomatsu.com/",
+    // },
 
 ]
