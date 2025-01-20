@@ -1,36 +1,40 @@
 export type NavbarType = {
     name: string;
-    href: string
+    id: number;
 }
 
 
 export const NavbarItems: NavbarType[] = [
     {
-        name: "ابتدای صفحه",
-        href: "home"
+        id: 1,
+        name: "خانه",
     },
     {
+        id: 2,
         name: "تایم لاین",
-        href: "timeline"
     },
     {
+        id: 3,
         name: "درباره من",
-        href: "about-me"
     },
     {
+        id: 4,
         name: "پروژه‌ها",
-        href: "projects"
     },
     {
+        id: 5,
         name: "گواهی",
-        href: "certificate"
     },
     {
+        id: 6,
         name: "مهارت‌ها",
-        href: "skills"
     },
     {
+        id: 7,
         name: "تماس با من",
-        href: "contact-me"
+    },
+    {
+        id: 8,
+        name: "تماس با من",
     },
 ]

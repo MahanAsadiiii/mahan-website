@@ -40,7 +40,7 @@ const Slider = () => {
                 initial="hidden"
                 animate="visible" // Trigger animation when in view
             >
-                <h1 className='text-center'>آخرین پروژه‌ها</h1>
+                {/* <h1 className='text-center'>آخرین پروژه‌ها</h1> */}
 
                 <Swiper
                     effect={'coverflow'}

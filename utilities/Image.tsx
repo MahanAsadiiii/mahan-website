@@ -29,9 +29,10 @@ import HumanShape5 from "../public/assets/notion-parade-white.svg"
 import PiriykaLogo from "../public/projects/piriyka.png"
 import QOSLogo from "../public/projects/quiz-of-shop.png"
 import MahanWebsite from "../public/projects/mahanwebsite.png"
+import RocketImage from "../public/assets/rocket.png"
 
 export {
-    whiteLogo, blackLogo, introGif, characterImg, FramerMotion, GSAP,
+    whiteLogo, blackLogo, introGif, characterImg, FramerMotion, GSAP, RocketImage,
     Html, Css, Js, React, Tailwind, Wordpress, RestApi
     , Typescript, NextJsSkills, NextJs, Git, AdvancedReact, PiriykaLogo,
     IpDetecor, Setting, Linkedin, LandPage, QOSLogo,

@@ -29,9 +29,9 @@ const AboutME = () => {
         <div id='about-me' className='bg-neutral-800 w-full' ref={containerRef}>
             <Layout>
                 <div className="flex items-center md:mx-auto flex-col ">
-                    <div className="my-2">
+                    {/* <div className="my-2">
                         <h1 className='text-white'>درباره من</h1>
-                    </div>
+                    </div> */}
                     <div className="flex flex-col md:flex-row items-center gap-2 mt-20 md:mt-10">
                         <div className="flex flex-col md:flex-row gap-7 my-7 md:my-10  dark:text-black w-full relative">
                             <Image src={HumanShape1} alt='topright' className='absolute -top-[106px] z-10 w-44 right-0' />

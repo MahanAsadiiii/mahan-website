@@ -69,7 +69,6 @@ const ContactMe = () => {
     <Layout idName={"contact-me"}>
       <div className="flex gap-4 justify-center">
         <div className=" flex flex-col w-full md:w-3/4 ">
-          <h1 className='text-center mb-10 '>تماس با من</h1>
           <form ref={formRef} onSubmit={formik.handleSubmit}>
             <FormControl className="flex flex-col" isInvalid={!!formik.errors.fullName && formik.touched.fullName}>
               <FormLabel htmlFor="fullName" className='py-2 text-xs md:text-base font-[estedad-bold] '>نام و نام خانوادگی</FormLabel>
@@ -95,9 +94,6 @@ const ContactMe = () => {
             <FormErrorMessage>{captcha}</FormErrorMessage>
             <Button isLoading={isLoading} type="submit" className='shadow-md shadow-gray-400 dark:shadow-none bg-gradient-to-r from-[#5651e5] to-[#709dff] w-full p-2 md:p-4 text-gray-100 mt-4 rounded-lg hover:scale-90 ease-in duration-300 '>ارسال</Button>
           </form>
-          <div className="flex w-full md:w-2/3 justify-around mx-auto mt-10">
-            <SocialMedia size={28} />
-          </div>
         </div>
       </div>
     </Layout>

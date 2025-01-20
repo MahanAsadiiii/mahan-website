@@ -12,7 +12,7 @@ const Projects = () => {
 
     return (
         <Layout idName='projects'>
-            <h1 className="text-center mt-5">پروژه‌ها</h1>
+            {/* <h1 className="text-center mt-5">پروژه‌ها</h1> */}
             <div ref={projectRef} className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 pt-10 mx-4">
                 {ProjectDetails.map((project, index) => {
                     return (

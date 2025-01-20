@@ -8,7 +8,18 @@ import { MobileMenu, ToggleButton } from './Index'
 import { useTheme } from '@/context/ThemeContext'
 
 
-const Navbar = () => {
+
+type NavbarProps = {
+    components: { id: number, name: string }[];
+    activeComponent: number;
+    setActiveComponent: (index: number) => void;
+};
+
+const Navbar = ({
+    components,
+    activeComponent,
+    setActiveComponent,
+}: NavbarProps) => {
     const [nav, setNav] = useState(false)
     const [shadow, setShadow] = useState(false)
     const headerRef: React.RefObject<HTMLDivElement> = useRef(null)
@@ -59,15 +70,20 @@ const Navbar = () => {
             <div ref={headerRef} className={`${nav && 'hidden'} fixed ${shadow && 'shadow-md z-10 bg-white dark:bg-neutral-800'}
             ease-in-out duration-500 flex justify-between md:justify-around items-center w-full z-50 py-4 px-4 md:px-7 md:max-h-20 min`}>
                 <div className="basis-1/4 md:basis-3/5 md:px-4 md:order-2 h-full">
-                    <ul className='hidden md:flex justify-evenly items-center h-full'>
-                        {NavbarItems.map((item, index) => {
-                            return (
-                                <Link key={index} to={item.href} spy={true} smooth={true} offset={-30} duration={600} activeStyle={{ borderBottom: '2px solid', scale: '1.2' }} >
-                                    <li className={`ml-2 text-sm uppercase font-[estedad-semibold]  hover:text-violet-700 duration-300 ease-linear pb-2 `}>{item.name}</li>
-                                </Link>
-                            )
-                        })}
-                    </ul>
+                    <nav className="hidden md:flex justify-center p-4">
+                        {components.map((comp, index) => (
+                            <button
+                                key={comp.id}
+                                className={`mx-2 px-4 py-2 text-sm font-medium rounded transition ${index === activeComponent
+                                    ? "bg-white text-gray-800"
+                                    : "text-white  hover:bg-white hover:text-gray-800"
+                                    }`}
+                                onClick={() => setActiveComponent(index)}
+                            >
+                                {comp.name}
+                            </button>
+                        ))}
+                    </nav>
                     <div onClick={handleNav} className="md:hidden ">
                         <AiOutlineMenu size={25} />
                     </div>
@@ -94,8 +110,12 @@ const Navbar = () => {
             {/* below codes is for mobile hamburger menu */}
 
             < div className={nav ? "fixed right-0 top-0 w-full h-screen bg-black/70 z-20" : ''} >
-                <MobileMenu handleNav={handleNav} navState={nav} closerFunc={clickHandler} />
+                <MobileMenu handleNav={handleNav} navState={nav} closerFunc={clickHandler}
+                    components={components}
+                    activeComponent={activeComponent}
+                    setActiveComponent={setActiveComponent} />
             </ div>
+
 
         </>
     )
