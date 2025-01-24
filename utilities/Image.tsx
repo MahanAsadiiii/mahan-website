@@ -30,6 +30,16 @@ import PiriykaLogo from "../public/projects/piriyka.png"
 import QOSLogo from "../public/projects/quiz-of-shop.png"
 import MahanWebsite from "../public/projects/mahanwebsite.png"
 import RocketImage from "../public/assets/rocket.png"
+import underconstruction from "../public/assets/Underconstruction.gif"
+
+
+// Planets
+import stars from "../public/assets/planets/stars.png"
+import Planet1 from "../public/assets/planets/Layer 44.png"
+import Planet2 from "../public/assets/planets/Layer 45.png"
+import Planet3 from "../public/assets/planets/Layer 46.png"
+import Planet4 from "../public/assets/planets/Layer 47.png"
+
 
 export {
     whiteLogo, blackLogo, introGif, characterImg, FramerMotion, GSAP, RocketImage,
@@ -37,4 +47,5 @@ export {
     , Typescript, NextJsSkills, NextJs, Git, AdvancedReact, PiriykaLogo,
     IpDetecor, Setting, Linkedin, LandPage, QOSLogo,
     Expenses, EngScl, HtmlCss, HumanShape1, HumanShape3, HumanShape5, MahanWebsite,
+    Planet1, Planet2, Planet3, Planet4, underconstruction, stars
 }

@@ -1,6 +1,6 @@
 import {
   Navbar, Main, AboutME, Skills, Projects,
-  TimeLine, ContactMe, Certificate, Slider
+  TimeLine, ContactMe, Certificate, Slider, Underconstruction
 } from '@/components/Index'
 import Head from 'next/head'
 import { motion, AnimatePresence } from "framer-motion";
@@ -32,19 +32,20 @@ export default function Home() {
       <Head>
         <title>Mahan | front-end Developer</title>
       </Head>
+      {/* <Underconstruction /> */}
       <div className="h-screen flex flex-col">
         <Navbar
           components={components}
           activeComponent={activeComponent}
           setActiveComponent={setActiveComponent}
         />
-        <div className="flex-grow relative overflow-hidden">
+        <div className=" relative overflow-hidden">
           <AnimatePresence mode="wait">
             {components.map((comp, index) =>
               index === activeComponent ? (
                 <motion.div
                   key={comp.id}
-                  className="absolute inset-0 flex items-center justify-center "
+                  className=""
                   initial={{ opacity: 0, x: 100 }}
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, y: 100 }}

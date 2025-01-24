@@ -9,7 +9,7 @@ const Certificate = () => {
   const { dark } = useTheme()
   return (
     <Layout idName='certificate'>
-      <h1 className='text-center mt-5'>گواهی</h1>
+      {/* <h1 className='text-center mt-5'>گواهی</h1> */}
       <div className="flex flex-col md:flex-row justify-between items-center">
         <div className="w-fit">
           <div className="grid grid-cols-1  mx-4">

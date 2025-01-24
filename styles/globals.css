@@ -73,3 +73,8 @@ html {
 .ProjectSlider .swiper-slide {
   @apply opacity-75;
 }
+
+#stars {
+  background: url("../public/assets/planets/stars.png") no-repeat center;
+  background-size: cover;
+}
