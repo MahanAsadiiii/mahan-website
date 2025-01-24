@@ -35,10 +35,10 @@ import underconstruction from "../public/assets/Underconstruction.gif"
 
 // Planets
 import stars from "../public/assets/planets/stars.png"
-import Planet1 from "../public/assets/planets/Layer 44.png"
-import Planet2 from "../public/assets/planets/Layer 45.png"
-import Planet3 from "../public/assets/planets/Layer 46.png"
-import Planet4 from "../public/assets/planets/Layer 47.png"
+import Planet1 from "../public/assets/planets/plnet1.png"
+import Planet2 from "../public/assets/planets/planet2.png"
+import Planet3 from "../public/assets/planets/planet3.png"
+import Planet4 from "../public/assets/planets/planet4.png"
 
 
 export {
