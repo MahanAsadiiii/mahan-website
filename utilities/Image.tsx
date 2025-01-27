@@ -35,11 +35,15 @@ import underconstruction from "../public/assets/Underconstruction.gif"
 
 // Planets
 import stars from "../public/assets/planets/stars.png"
-import Planet1 from "../public/assets/planets/plnet1.png"
+import Moon from "../public/assets/planets/moon.png"
 import Planet2 from "../public/assets/planets/planet2.png"
 import Planet3 from "../public/assets/planets/planet3.png"
 import Planet4 from "../public/assets/planets/planet4.png"
-
+import EarthPlanet from "../public/assets/planets/earth.png"
+import SaturnPlanet from "../public/assets/planets/saturn.png"
+import darkPlanet from "../public/assets/planets/darkplanet.png"
+import venusPlanet from "../public/assets/planets/venus.png"
+import MeteoriteSmall from "../public/assets/planets/Meteorite32.png"
 
 export {
     whiteLogo, blackLogo, introGif, characterImg, FramerMotion, GSAP, RocketImage,
@@ -47,5 +51,6 @@ export {
     , Typescript, NextJsSkills, NextJs, Git, AdvancedReact, PiriykaLogo,
     IpDetecor, Setting, Linkedin, LandPage, QOSLogo,
     Expenses, EngScl, HtmlCss, HumanShape1, HumanShape3, HumanShape5, MahanWebsite,
-    Planet1, Planet2, Planet3, Planet4, underconstruction, stars
+    Moon, Planet2, Planet3, Planet4, underconstruction, stars, EarthPlanet,
+    SaturnPlanet, darkPlanet, venusPlanet, MeteoriteSmall
 }
