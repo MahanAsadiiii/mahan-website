@@ -58,7 +58,7 @@ const ContactMe = () => {
       email: Yup.string().email("فرمت ایمیل مورد تایید نیست")
         .required("فیلد اجباری"),
       note: Yup.string()
-        .min(40, "باید حداقل 40 کاراکتر باشد")
+        .min(10, "باید حداقل 10 کاراکتر باشد")
         .required("فیلد اجباری"),
     }),
   });
@@ -67,34 +67,36 @@ const ContactMe = () => {
 
   return (
     <Layout idName={"contact-me"}>
-      <div className="flex gap-4 justify-center">
-        <div className=" flex flex-col w-full md:w-3/4 ">
-          <form ref={formRef} onSubmit={formik.handleSubmit}>
-            <FormControl className="flex flex-col" isInvalid={!!formik.errors.fullName && formik.touched.fullName}>
+      <div className="flex max-w-5xl mx-auto w-full">
+        <form ref={formRef} className='w-full' onSubmit={formik.handleSubmit}>
+          <div className='flex gap-5'>
+            <FormControl className="flex flex-col w-1/3" isInvalid={!!formik.errors.fullName && formik.touched.fullName}>
               <FormLabel htmlFor="fullName" className='py-2 text-xs md:text-base font-[estedad-bold] '>نام و نام خانوادگی</FormLabel>
               <Input id='fullName' type="text" className='border-2 rounded-lg p-3 flex border-gray-300 text-black' placeholder='نام و نام خانوادگی'  {...formik.getFieldProps("fullName")} />
               <FormErrorMessage className='font-[estedad-bold] text-xs pr-3 pt-2 text-red-600'>{formik.errors.fullName}</FormErrorMessage>
             </FormControl>
-            <FormControl className="flex flex-col" isInvalid={!!formik.errors.mobileNumber && formik.touched.mobileNumber}>
+            <FormControl className="flex flex-col w-1/3" isInvalid={!!formik.errors.mobileNumber && formik.touched.mobileNumber}>
               <FormLabel htmlFor="mobileNumber" className='py-2 text-xs md:text-base font-[estedad-bold]'>شماره موبایل</FormLabel>
               <Input id='mobileNumber' type="tel" className='border-2 rounded-lg p-3 flex border-gray-300 text-black' placeholder='09364952555' {...formik.getFieldProps('mobileNumber')} />
               <FormErrorMessage className='font-[estedad-bold] text-xs pr-3 pt-2 text-red-600'>{formik.errors.mobileNumber}</FormErrorMessage>
             </FormControl>
-            <FormControl className="flex flex-col" isInvalid={!!formik.errors.email && formik.touched.email}>
+            <FormControl className="flex flex-col w-1/3" isInvalid={!!formik.errors.email && formik.touched.email}>
               <FormLabel htmlFor="email" className='py-2 text-xs md:text-base font-[estedad-bold]'>ایمیل</FormLabel>
               <Input id='email' type="email" className='border-2 rounded-lg p-3 flex border-gray-300 text-black' placeholder='info@mahan-asadi.ir' {...formik.getFieldProps('email')} />
               <FormErrorMessage className='font-[estedad-bold] text-xs pr-3 pt-2 text-red-600'>{formik.errors.email}</FormErrorMessage>
             </FormControl>
-            <FormControl className="flex flex-col" isInvalid={!!formik.errors.note && formik.touched.note}>
-              <FormLabel htmlFor="note" className='py-2 text-xs md:text-base font-[estedad-bold]'>پیام</FormLabel>
-              <Textarea id='note' className='border-2 rounded-lg p-3 flex border-gray-300 text-black' rows={8} placeholder='متن پیام خود را وارد کنید.....' {...formik.getFieldProps('note')} />
-              <FormErrorMessage className='font-[estedad-bold] text-xs pr-3 pt-2 text-red-600'>{formik.errors.note}</FormErrorMessage>
-            </FormControl>
-            <ReCAPTCHA id='captcha' sitekey='6LeSWYkpAAAAAF71XrjpcNU2SvS9eDLirbs6g7W7' className='pt-3' onChange={() => { setCaptcha(!captcha) }} />
+          </div>
+          <FormControl className="flex flex-col w-full" isInvalid={!!formik.errors.note && formik.touched.note}>
+            <FormLabel htmlFor="note" className='py-2 text-xs md:text-base font-[estedad-bold]'>پیام</FormLabel>
+            <Textarea id='note' className='border-2 rounded-lg p-3 flex border-gray-300 text-black' rows={5} placeholder='متن پیام خود را وارد کنید.....' {...formik.getFieldProps('note')} />
+            <FormErrorMessage className='font-[estedad-bold] text-xs pr-3 pt-2 text-red-600'>{formik.errors.note}</FormErrorMessage>
+          </FormControl>
+          <div className="flex gap-5 pt-3 items-end justify-between">
             <FormErrorMessage>{captcha}</FormErrorMessage>
-            <Button isLoading={isLoading} type="submit" className='shadow-md shadow-gray-400 dark:shadow-none bg-gradient-to-r from-[#5651e5] to-[#709dff] w-full p-2 md:p-4 text-gray-100 mt-4 rounded-lg hover:scale-90 ease-in duration-300 '>ارسال</Button>
-          </form>
-        </div>
+            <Button isLoading={isLoading} type="submit" className='w-1/3 shadow-md shadow-gray-400 dark:shadow-none bg-gradient-to-r from-[#5651e5] to-[#709dff] p-2 md:p-4 text-gray-100 mt-4 rounded-lg hover:scale-90 ease-in duration-300 '>ارسال</Button>
+            <ReCAPTCHA id='captcha' sitekey='6LeSWYkpAAAAAF71XrjpcNU2SvS9eDLirbs6g7W7' className='' onChange={() => { setCaptcha(!captcha) }} />
+          </div>
+        </form>
       </div>
     </Layout>
   )

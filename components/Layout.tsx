@@ -8,7 +8,7 @@ interface LayoutProps {
 const Layout = ({ idName, children }: LayoutProps) => {
 
     return (
-        <section id={idName} className={`relative flex  items-center w-full h-screen cursor-default`}>
+        <section id={idName} className={`relative flex items-center w-full h-screen cursor-default`}>
             {children}
         </section>
     );

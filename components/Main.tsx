@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Layout } from "./Index";
 import Link from 'next/link';
-import { Planet2, Planet3, Planet4, RocketImage, EarthPlanet, SaturnPlanet, darkPlanet, Moon, MeteoriteSmall} from "@/utilities/Image";
+import { Planet2, Planet3, Planet4, RocketImage, EarthPlanet, SaturnPlanet, darkPlanet, Moon, MeteoriteSmall } from "@/utilities/Image";
 import Image from "next/image";
 
 const planetsVariants = {
@@ -303,6 +303,7 @@ const rocketVariants = {
     RocketHidden: {
         y: "100vh",
         x: '-200vw',
+        opacity: 0
     },
     RocketVisible: {
         y: "-150vh",
@@ -397,7 +398,7 @@ const Main: React.FC = () => {
 
             {/* earth and moon part */}
             <div className="">
-                <motion.div className="absolute inset-0 z-20 flex justify-center items-center "
+                <motion.div className="absolute inset-0 flex justify-center items-center "
                     variants={planetsVariants}
                     initial="earthHidden"
                     animate="earthVisible"

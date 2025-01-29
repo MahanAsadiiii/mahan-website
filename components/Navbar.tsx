@@ -70,11 +70,11 @@ const Navbar = ({
             <div ref={headerRef} className={`${nav && 'hidden'} fixed ${shadow && 'shadow-md z-10 bg-white dark:bg-neutral-800'}
             ease-in-out duration-500 flex justify-between md:justify-around items-center w-full z-50 py-4 px-4 md:px-7 md:max-h-20 min`}>
                 <div className="basis-1/4 md:basis-3/5 md:px-4 md:order-2 h-full">
-                    <nav className="hidden md:flex justify-center p-4">
+                    <nav className="hidden md:flex justify-center p-4 gap-4">
                         {components.map((comp, index) => (
                             <button
                                 key={comp.id}
-                                className={`mx-2 px-4 py-2 text-sm font-medium rounded transition ${index === activeComponent
+                                className={`px-2 py-2 text-sm font-medium rounded transition ${index === activeComponent
                                     ? "bg-white text-gray-800"
                                     : "text-white  hover:bg-white hover:text-gray-800"
                                     }`}

@@ -5,13 +5,13 @@ import { VscCircleFilled } from "react-icons/vsc"
 
 const WorkExperinece = () => {
     return (
-        <div className="flex justify-between gap-5">
-            <div className="w-7 bg-gradient-to-b from-violet-800 to-violet-100 rounded-full"></div>
-            <div className="flex flex-col justify-between gap-10 basis-[95%] py-4">
+        <div className="flex justify-center gap-5 w-full mt-20 px-5">
+            {/* <div className="w-7 bg-gradient-to-b from-violet-800 to-violet-100 rounded-full"></div> */}
+            <div className="grid md:grid-cols-2 gap-5 max-w-5xl mx-auto">
                 {WorkItems.map((item, index) => {
                     return (
-                        <div key={index} className="flex flex-col md:w-2/3 lg:w-1/2 group cursor-default">
-                            <div className="md:group-hover:-translate-x-14 ease-in-out duration-1000 group-hover:shadow-2xl group-hover:p-5 rounded-xl flex flex-col gap-2 group-hover:gap-4 group-hover:bg-violet-500 group-hover:text-white ">
+                        <div key={index} className="flex flex-col group cursor-default">
+                            <div className="ease-in-out duration-1000 group-hover:shadow-2xl p-4 rounded-xl flex flex-col gap-2 group-hover:bg-violet-500 group-hover:text-white ">
                                 <div className="flex flex-col md:flex-row gap-2 md:gap-5 md:items-baseline ">
                                     <div className="flex items-center gap-1">
                                         <VscCircleFilled className="group-hover:text-green-400" />

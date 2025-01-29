@@ -28,7 +28,7 @@ const AboutME = () => {
     return (
         <div id='about-me' className='bg-neutral-800 w-full' ref={containerRef}>
             <Layout>
-                <div className="flex items-center md:mx-auto flex-col ">
+                <div className="flex items-center md:mx-auto flex-col max-w-5xl">
                     {/* <div className="my-2">
                         <h1 className='text-white'>درباره من</h1>
                     </div> */}
