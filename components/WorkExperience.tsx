@@ -11,11 +11,11 @@ const WorkExperinece = () => {
                 {WorkItems.map((item, index) => {
                     return (
                         <div key={index} className="flex flex-col group cursor-default">
-                            <div className="ease-in-out duration-1000 group-hover:shadow-2xl p-4 rounded-xl flex flex-col gap-2 group-hover:bg-violet-500 group-hover:text-white ">
+                            <div className="p-4 rounded-xl flex flex-col gap-2 bg-violet-500 text-white ">
                                 <div className="flex flex-col md:flex-row gap-2 md:gap-5 md:items-baseline ">
                                     <div className="flex items-center gap-1">
-                                        <VscCircleFilled className="group-hover:text-green-400" />
-                                        <h3 className="text-sm md:text-base group-hover:text-green-400">{item.companyName}</h3>
+                                        <VscCircleFilled className="text-green-400" />
+                                        <h3 className="text-sm md:text-base text-green-400">{item.companyName}</h3>
                                     </div>
                                     <div className="hidden md:flex">-</div>
                                     <h4 className="text-xs md:text-sm">{item.jobTitle}</h4>

@@ -32,11 +32,11 @@ const planetsVariants = {
     },
 
     smallMeteoriteHidden: {
-        x: "0vw",
+        x: "50vw",
         y: "0vh"
     },
     smallMeteoriteVisible: {
-        x: "-100vw",
+        x: "-60vw",
         y: "-40vh",
         opacity: [1, 0.7, 0.8, 0.5, 0.8, 0.7, 0.1],
         transition: {
@@ -59,21 +59,18 @@ const planetsVariants = {
         },
     },
     earthVisible: {
-        x: '36vw',
+        x: '30vw',
         y: '-30vh',
-        scale: [1, 1.07, 1],
         transition: {
             x: {
                 type: "spring",
-                stiffness: 200,
-                duration: 2,
+                stiffness: 150,
+                duration: 3,
             },
             y: {
-                duration: 2,
-            },
-
-            scale: {
-                duration: 2,
+                type: "spring",
+                stiffness: 80,
+                duration: 3,
             },
         },
     },
@@ -107,13 +104,13 @@ const planetsVariants = {
         },
     },
     blueVisible: {
-        x: '-90vw',
+        x: '-45vw',
         opacity: [0.8, 1.5, 0.8],
         scale: [1, 1.07, 1],
         transition: {
             x: {
                 type: "spring",
-                stiffness: 200,
+                stiffness: 100,
                 duration: 2,
             },
             opacity: {
@@ -131,10 +128,10 @@ const planetsVariants = {
         transition: {
             y: {
                 type: "spring",
-                stiffness: 100,
+                repeatType: "mirror",
+                stiffness: 200,
                 duration: 2,
                 repeat: Infinity,
-                repeatType: "mirror",
             },
             rotate: {
                 repeat: Infinity,
@@ -152,7 +149,7 @@ const planetsVariants = {
         },
     },
     orangeVisible: {
-        x: '-80vw',
+        x: '-40vw',
         y: '-40vh',
         transition: {
             x: {
@@ -183,7 +180,7 @@ const planetsVariants = {
     },
 
     pinkHidden: {
-        x: "0vw",
+        x: "50vw",
         y: '60vh',
         opacity: 0,
         transition: {
@@ -191,15 +188,17 @@ const planetsVariants = {
         },
     },
     pinkVisible: {
-        x: '0vw',
-        y: '20vh',
+        x: '40vw',
+        y: '25vh',
         transition: {
             x: {
-                stiffness: 200,
+                type: "spring",
+                stiffness: 100,
                 duration: 2,
             },
             y: {
-                stiffness: 200,
+                type: "spring",
+                stiffness: 150,
                 duration: 2,
             },
         },
@@ -229,23 +228,25 @@ const planetsVariants = {
 
     saturnHidden: {
         x: "-20vw",
-        y: '100vh',
+        y: '60vh',
         opacity: 0,
         transition: {
             duration: 2,
         },
     },
     saturnVisible: {
-        x: '-60vw',
-        y: '30vh',
+        x: '-10vw',
+        y: '40vh',
         opacity: 0,
         transition: {
             x: {
-                stiffness: 200,
+                type: 'spring',
+                stiffness: 30,
                 duration: 2,
             },
             y: {
-                stiffness: 200,
+                type: 'spring',
+                stiffness: 50,
                 duration: 2,
             },
         },
@@ -269,13 +270,13 @@ const planetsVariants = {
         },
     },
     darkVisible: {
-        x: '-60vw',
-        y: '-30vh',
+        x: '-20vw',
+        y: '-25vh',
         transition: {
             x: {
                 type: "spring",
                 duration: 2,
-                stiffness: 10,
+                stiffness: 50,
             },
             y: {
                 type: "spring",
@@ -301,22 +302,21 @@ const planetsVariants = {
 
 const rocketVariants = {
     RocketHidden: {
-        y: "100vh",
-        x: '-200vw',
-        opacity: 0
+        y: "50vh",
+        x: '-100vw',
     },
     RocketVisible: {
-        y: "-150vh",
+        y: "-50vh",
         x: '100vw',
         transition: {
             y: {
                 type: 'tween',
-                duration: 5,
+                duration: 3,
                 delay: 2
             },
             x: {
                 type: 'tween',
-                duration: 5,
+                duration: 3,
                 delay: 2
             },
         },
@@ -326,8 +326,15 @@ const rocketVariants = {
 const Main: React.FC = () => {
     return (
         <Layout >
-
-            <div className="">
+            <div className="relative w-full h-screen flex justify-center items-center">
+                {/* background  */}
+                <motion.div id="stars"
+                    className="absolute w-full h-full -z-30"
+                    variants={planetsVariants}
+                    initial="starsHidden"
+                    animate="starsVisible"
+                >
+                </motion.div>
                 {/* Planet 2 */}
                 <motion.div
                     className="absolute"
@@ -383,7 +390,7 @@ const Main: React.FC = () => {
                     initial="RocketHidden"
                     animate="RocketVisible"
                 >
-                    <Image alt='main-vector' src={RocketImage} className="hidden md:block rotate-12" width={400} />
+                    <Image alt='main-vector' src={RocketImage} className="hidden md:block rotate-[30deg]" width={400} />
                     <Image alt='main-vector' src={RocketImage} className="sm:block md:hidden rotate-12" width={200} />
                 </motion.div>
 
@@ -394,57 +401,47 @@ const Main: React.FC = () => {
                     animate="smallMeteoriteVisible">
                     <Image alt="" src={MeteoriteSmall} className="rotate-[60deg] -z-10" />
                 </motion.div>
-            </div>
 
-            {/* earth and moon part */}
-            <div className="">
-                <motion.div className="absolute inset-0 flex justify-center items-center "
+                {/* earth and moon part */}
+
+                <motion.div
+                    className="absolute"
                     variants={planetsVariants}
                     initial="earthHidden"
-                    animate="earthVisible"
+                    animate={["earthVisible", "moonMoveAfterStay"]}
                 >
-                    <motion.div
-                        className="absolute"
-                        variants={planetsVariants}
-                        animate={"moonMoveAfterStay"}
-                    >
-                        <Image alt="moon" src={Moon} />
-                    </motion.div>
-                    <motion.div
-                        className="absolute"
-                        variants={planetsVariants}
-                        animate={"earthMoveAfterStay"}
-                    >
-                        <Image alt="Pink-planet" src={EarthPlanet} />
-                    </motion.div>
+                    <Image alt="moon" src={Moon} />
                 </motion.div>
+                <motion.div
+                    className="absolute"
+                    variants={planetsVariants}
+                    initial="earthHidden"
+                    animate={["earthVisible", "earthMoveAfterStay"]}
+                >
+                    <Link href={'#about-me'} />
+                    <Image alt="Pink-planet" src={EarthPlanet} />
+                </motion.div>
+
+
+                {/* 
+                <motion.div className="w-full flex flex-col items-center justify-end gap-3 lg:gap-8"
+                    variants={planetsVariants}
+                    initial="textHidden"
+                    animate="textVisible"
+                >
+                    <h2 className='flex flex-wrap items-center drop-shadow-md lg:text-6xl'>
+                        <span className=' text-3xl md:text-3xl lg:text-8xl'>سلام</span>, من <span className=' text-[#5651e5] dark:text-[#736ffa] text-4xl md:text-4xl lg:text-8xl'>ماهان</span> هستم.
+                    </h2>
+                    <p className='text-gray-600 dark:text-white max-w-[90%] md:max-w-[70%] text-center text-sm md:text-sm lg:text-base'>فارغ التحصیل مهندسی کامپیوتر, گرایش نرم افزار, که در حال حاضر به عنوان طراح و توسعه دهنده وب سایت, مشغول کار هستم.
+                    </p>
+                    <Link href="/file/MahanAsadiResume-V2.2.pdf" className=''>
+                        <button className='shadow-md shadow-gray-400 dark:shadow-none bg-gradient-to-r from-[#5651e5] to-[#709dff]  text-white py-3 px-16 rounded-md mt-4 hover:scale-110 w-full ease-in-out duration-500'>دانلود رزومه
+                        </button>
+                    </Link>
+                </motion.div> */}
+
+
             </div>
-
-            <motion.div className="w-full flex flex-col items-center justify-end  gap-3 lg:gap-8"
-                variants={planetsVariants}
-                initial="textHidden"
-                animate="textVisible"
-            >
-                <h2 className='flex flex-wrap items-center drop-shadow-md lg:text-6xl'>
-                    <span className=' text-3xl md:text-3xl lg:text-8xl'>سلام</span>, من <span className=' text-[#5651e5] dark:text-[#736ffa] text-4xl md:text-4xl lg:text-8xl'>ماهان</span> هستم.
-                </h2>
-                <p className='text-gray-600 dark:text-white max-w-[90%] md:max-w-[70%] text-center text-sm md:text-sm lg:text-base'>فارغ التحصیل مهندسی کامپیوتر, گرایش نرم افزار, که در حال حاضر به عنوان طراح و توسعه دهنده وب سایت, مشغول کار هستم.
-                </p>
-                <Link href="file/MahanAsadiResume-V2.2.pdf" className='lg:w-2/5'>
-                    <button className='shadow-md shadow-gray-400 dark:shadow-none bg-gradient-to-r from-[#5651e5] to-[#709dff]  text-white py-3 px-16 rounded-md mt-4 hover:scale-110 w-full ease-in-out duration-500'>دانلود رزومه
-                    </button>
-                </Link>
-            </motion.div>
-
-            {/* background  */}
-            <motion.div id="stars"
-                className="absolute w-full h-full -z-30"
-                variants={planetsVariants}
-                initial="starsHidden"
-                animate="starsVisible"
-            >
-            </motion.div>
-
         </Layout >
 
     );
