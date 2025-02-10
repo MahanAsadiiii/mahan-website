@@ -423,7 +423,7 @@ const Main: React.FC = () => {
                 </motion.div>
 
 
-                {/* 
+
                 <motion.div className="w-full flex flex-col items-center justify-end gap-3 lg:gap-8"
                     variants={planetsVariants}
                     initial="textHidden"
@@ -438,7 +438,7 @@ const Main: React.FC = () => {
                         <button className='shadow-md shadow-gray-400 dark:shadow-none bg-gradient-to-r from-[#5651e5] to-[#709dff]  text-white py-3 px-16 rounded-md mt-4 hover:scale-110 w-full ease-in-out duration-500'>دانلود رزومه
                         </button>
                     </Link>
-                </motion.div> */}
+                </motion.div>
 
 
             </div>
